@@ -1,0 +1,524 @@
+====================
+     11-26-2016
+====================
+
+
+   * device/xiaomi/armani/
+90589e0 armani: Bring DozeSettings up to date
+d1b1b0b armani: Add XiaomiDoze package
+
+   * external/f2fs-tools/
+d895e39 f2fs-tools: hack headers to unbreak darwin build
+
+   * frameworks/base/
+a1c3124 Automatic translation import
+b4e7c3b sounds: remove last trace of Tejat.ogg
+8ad2d5b Remove duplicate audio: Tejat is Argon
+e76fda0 Option to use volume keys to control media volume anytime (2/2)
+2d28d9a Automatic translation import
+d28f989 Automatic translation import
+
+   * kernel/xiaomi/armani/
+d0b6503 Revert "lmk, reclaim: enhanced pressure and logic code"
+b71d74c Revert "arm64: dma-mapping: always clear allocated buffers"
+11e9de4 defconfig: enable ntfs and exfat fs
+5feeae9 exFAT support
+1482c27 Turn ON display when HS Jack is detected
+603718b sound: add sound control to increase headphones, speaker and mic gain.
+ca57035 pft: Fix compilation when CONFIG_PFT is not set
+6caab0b arm64: dma-mapping: always clear allocated buffers
+0c9ea66 lmk, reclaim: enhanced pressure and logic code
+
+   * packages/apps/CMParts/
+54533bf CMParts: Hide Reset action if Battery LED is not multicolor
+
+   * packages/apps/Settings/
+b3d4d91 Automatic translation import
+642fe1d Automatic translation import
+7dc8e5d Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+2428f11 Revert "UnifiedEmail: not show "help&feedback" in general settiings if url is null"
+
+   * packages/services/Telephony/
+e2447c5 Automatic translation import
+b71382c Automatic translation import
+cd7617e Automatic translation import
+
+====================
+     11-25-2016
+====================
+
+
+   * bootable/recovery/
+e43aa8e fstools: Add libselinux dep
+
+   * build/
+61dcb00 build: kernel: Remove duplicated targets
+200e9b5 build: Set android jack args to global jack server args if existing
+
+   * device/xiaomi/armani/
+6686ebe Add 'misc' entry in fstab
+
+   * external/f2fs-tools/
+0d18747 libf2fs_fmt: Add missing src file
+
+   * frameworks/base/
+d1f296b Revert "frameworks: fix system server crash"
+
+   * hardware/qcom/audio-caf/msm8994/
+e7d143c hal: Fix warnings in audio HAL and policy
+
+   * kernel/xiaomi/armani/
+0c9ea66 lmk, reclaim: enhanced pressure and logic code
+24bae2e mm: adjust page migration heuristic
+454201e mm: vmpressure: dynamic window sizing.
+19f3a74 mm: improve migration heuristic
+eb29f64 mm: more aggressive page stealing for UNMOVABLE allocations
+f723b4a mm: always steal split buddies in fallback allocations
+e47b8b5 mm: when stealing freepages, also take pages created by splitting buddy page
+7796527 mm: get rid of unnecessary overhead of trace_mm_page_alloc_extfrag()
+c5aa4b5 mm/page_alloc.c: fix the value of fallback_migratetype in alloc_extfrag tracepoint()
+ab63f9d mm/page_alloc: prevent MIGRATE_RESERVE pages from being misplaced
+40fdd88 mm: page_alloc: use get_freepage_migratetype() instead of page_private()
+0bf4107 mm: __rmqueue_fallback() should respect pageblock type
+93b004b mm/page_allo.c: restructure free-page stealing code and fix a bug
+07930f7 Revert "mm: fix calculation of dirtyable memory"
+b5bc6c5 asm: Added optimized ARM RWSEM algorithm
+c168407 futex: Make lookup_pi_state more robust
+93b5b10 futex: Always cleanup owner tid in unlock_pi
+aa13e58 futex: Validate atomic acquisition in futex_lock_pi_atomic()
+2cceb0a af_unix: use freezable blocking calls in read
+25a7692 sigtimedwait: use freezable blocking call
+25fd1df nanosleep: use freezable blocking call
+6440e97 futex: use freezable blocking call
+13352bd select: use freezable blocking call
+2cb9f51 binder: use freezable blocking calls
+35494cc freezer: add new freezable helpers using freezer_do_not_count()
+eb0fa3f freezer: convert freezable helpers to static inline where possible
+7c33495 freezer: convert freezable helpers to freezer_do_not_count()
+16be958 freezer: skip waking up tasks with PF_FREEZER_SKIP set
+5439eab lockdep: check that no locks held at freeze time
+a08dcfe lockdep: remove task argument from debug_check_no_locks_held
+41c98b2 freezer: add unsafe versions of freezable helpers for CIFS
+e2de66f freezer: add unsafe versions of freezable helpers for NFS
+590f11d HACK: ARM: disable sleeping while atomic warning in do_signal
+09a3209 Revert "freezer: comment out might_sleep()"
+478ce3e freezer: add missing mb's to freezer_count() and freezer_should_skip()
+5f2b82c ASoC: msm-lsm-client: Use freezable wait for EVENT_STATUS ioctl
+9834a62 fs/namei.c: fix potential memory leak in path_lookupat
+
+   * packages/apps/Messaging/
+96e82e9 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+430d7ca Automatic translation import
+
+   * packages/providers/DownloadProvider/
+aee1af3 Automatic translation import
+
+   * vendor/aicp/
+ead7cbb Merge "hammerheadcaf: Restructure device tree" into n7.1
+9e9bd46 extract_utils: Use shasum on macOS
+39d206f vendor_aicp: enable hidden storage manager
+0a67711 flounder: update fingerprint to NRD91N
+d639fc3 hammerheadcaf: Restructure device tree
+
+====================
+     11-24-2016
+====================
+
+
+   * external/libnfc-nci/
+3a0daa8 libnfc-nci: set NXP_CHIP_TYPE based on BOARD_NFC_CHIPSET
+
+   * external/toybox/
+97ad7b2 toybox: Remove -e from @echo
+aea3b6a toybox: kill colors
+
+   * external/vim/
+702ccbe vim: kill colors
+
+   * hardware/qcom/audio-caf/msm8994/
+09870a9 policy_hal: fix improper voice-playback concurrency handling
+2c2f7ef hal: Add performance lock for playback usecase
+e7c84b0 hal: update combo device handling
+7cc5363 hal: Add support for LINE out device
+
+   * packages/apps/AicpExtras/
+1941649 AmPm: Call SystemUI restart dialog
+
+   * packages/apps/Bluetooth/
+523d4ec Automatic translation import
+
+   * packages/apps/Calendar/
+f0333d7 Automatic translation import
+
+   * packages/apps/Dialer/
+dad5de1 Automatic translation import
+
+   * packages/apps/Messaging/
+e8f5b45 Automatic translation import
+
+   * packages/apps/PackageInstaller/
+3661fe4 Automatic translation import
+fd5c73a Fix PackageInstaller FC when tapping on a downloaded apk notification
+
+   * packages/apps/PhoneCommon/
+0f4466a Automatic translation import
+
+   * packages/apps/Settings/
+c1a7df3 Settings: skip Misc/Overcounted battery stats in builds
+
+   * packages/providers/DownloadProvider/
+9a8fb27 Automatic translation import
+
+   * packages/providers/MediaProvider/
+03030ca MediaProvider: Add read storage permission
+
+   * system/sepolicy/
+477f719 Merge "sepolicy: syncro with cm-14.1" into n7.1
+
+====================
+     11-23-2016
+====================
+
+
+   * external/openssh/
+613dd5c Merge branch 'master' of https://android.googlesource.com/platform/external/openssh into cm-14.1
+
+   * packages/apps/Bluetooth/
+bc73bc0 Automatic translation import
+
+   * packages/apps/Calendar/
+94365e1 Automatic translation import
+
+   * packages/apps/Camera2/
+566dafc Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+69e754d Automatic translation import
+
+   * packages/apps/CertInstaller/
+07643f0 Automatic translation import
+
+   * packages/apps/Contacts/
+31c6ef5 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+b9e413b Automatic translation import
+
+   * packages/apps/DeskClock/
+2cb0615 Automatic translation import
+
+   * packages/apps/Dialer/
+d7ad929 Automatic translation import
+
+   * packages/apps/Email/
+c70ec44 Automatic translation import
+
+   * packages/apps/EmergencyInfo/
+92d67fc Automatic translation import
+
+   * packages/apps/ExactCalculator/
+677ff23 Automatic translation import
+
+   * packages/apps/Gallery2/
+f13eaf7 Automatic translation import
+
+   * packages/apps/HTMLViewer/
+c041553 Automatic translation import
+
+   * packages/apps/KeyChain/
+295fa14 Automatic translation import
+
+   * packages/apps/ManagedProvisioning/
+3c93754 Automatic translation import
+
+   * packages/apps/Messaging/
+29aaed6 Automatic translation import
+
+   * packages/apps/Nfc/
+bdd0352 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+8693d70 Automatic translation import
+
+   * packages/apps/SafetyRegulatoryInfo/
+884079c Automatic translation import
+
+   * packages/apps/Settings/
+dfe6367 Merge "Settings: fix NPE in setup wizard" into n7.1
+
+   * packages/apps/SoundRecorder/
+de75853 Automatic translation import
+
+   * packages/apps/Stk/
+19af7b3 Automatic translation import
+
+   * packages/apps/Tag/
+a491550 Automatic translation import
+
+   * packages/apps/Terminal/
+1127958 Automatic translation import
+
+   * packages/apps/TvSettings/
+e7aa3df Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+cc33099 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+5bb754f Automatic translation import
+
+   * packages/providers/BookmarkProvider/
+9324a3b Automatic translation import
+
+   * packages/providers/CalendarProvider/
+a37b133 Automatic translation import
+
+   * packages/providers/CallLogProvider/
+68557e2 Automatic translation import
+
+   * packages/providers/ContactsProvider/
+ac1ff69 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+a74d05d Automatic translation import
+
+   * packages/providers/MediaProvider/
+ba47c2f Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+ec791e8 Automatic translation import
+
+   * packages/providers/UserDictionaryProvider/
+0d59b58 Automatic translation import
+
+   * packages/screensavers/Basic/
+7d8b698 Automatic translation import
+
+   * packages/screensavers/PhotoTable/
+c412483 Automatic translation import
+
+   * packages/services/Telecomm/
+9cf0e3b Automatic translation import
+
+   * packages/wallpapers/LivePicker/
+566f4a0 Automatic translation import
+
+   * vendor/aicp/
+2470c4a Add Hydrogen
+7faa378 flounder: use cyanogenmod_flounder_defconfig
+
+   * vendor/cmsdk/
+e8aecd3 cmsdk: Ensure CMHW feature constants aren't optimized out
+
+====================
+     11-22-2016
+====================
+
+
+   * frameworks/base/
+211e587 Restore Pyxis to fix build
+749defb4 Modify the case in adjustFocus when the mFocusedActivity is null
+fb2445c IndexOutOfBoundsException observed in ProcessStats
+59dce83 Fix split-screen flash issue
+80a098c Fix memory leak of Dnd tile
+61d8232 Fix static-analyzer warning.
+80a2b42 Avoid automatically mirroring Drawable of CustomTile
+b67ce46 Avoid NPE around mReusedTask of ActivityStarter
+3527e1d LEDs Brightness: Rewrite the slider control without TunerService
+20e43812 Fix issue that Overview key doesn't work at secondary user
+46135b5 Share one receiver for CurrentUserTracker
+c32de60 data: sounds: cleanup ogg
+
+   * kernel/xiaomi/armani/
+98abf0b ARM: 8158/1: LLVMLinux: use static inline in ARM ftrace.h
+da0b47a Lock initial TCP window size to 64k (Improves network ping and output)
+3262673 af_unix: speedup /proc/net/unix
+
+   * packages/apps/Settings/
+162c82b Merge "Settings: Enable storage manager" into n7.1
+
+   * system/sepolicy/
+f0eb3cf sepolicy: syncro with cm-14.1
+
+   * vendor/aicp/
+43b4301 vendor: aicp: Update Huashan maintainers list
+daacd2f Clean up 3G config for Vietnamese network
+
+   * vendor/xiaomi/
+f4d134b Update WideVine files
+
+====================
+     11-21-2016
+====================
+
+
+   * device/qcom/common/
+680823c qcom: extractors: Add msm8960 graphics list
+
+   * frameworks/base/
+33699c5 Make Power Notification Controls scrollable
+bb2bd94 fixed applyConfigurationToResourcesLocked WeakReference is null
+a84a812 fix NullPointerException in RegisteredServicesCache
+0955e48 Add null check before finish SystemUI Tuner's activity
+a60c9d7 Fix String is empty issue
+1253bc8 Tethering: check if configManager is null
+2f8f2d6 fix mistaken check of mScreenBrightnessDarkConfig
+5dc544f Remove .mk lines that are just setting the default
+9c41af7 Correctly handle when the user has no explicit time_12_24 setting
+1fc03fd Zygote: Avoid string concatentation for systrace
+066dd6d lockscreen: Add option for showing unlock screen directly
+478fc5e Fix idmap leak in zygote process
+49a6d11 sounds: AllAudio: Avoid conflicting ringtone names
+d9c81d6 Brightness mirror - fix multi-touch issue
+
+   * frameworks/opt/telephony/
+14b6666 Update carrier services on EVENT_NV_READY
+
+   * hardware/qcom/media/
+068d0fa mm-video: vidc: Remove hardcoding of BufCountActual
+b1a0180 mm-video: venc: update color format in port-def
+97f071b mm-video: venc: Use correct flag for buffer index selection
+85bf3e0 mm-video: venc: update allocation-size check for meta-buffer
+79b01cb mm-video: venc: Correct a typo in variable name
+4b826f7 media: Use    * pathmap
+3516553 media: Add symlinks to msm8974
+ae0bd7c media: Use kernel headers
+19f2743 Revert "msm8974: remove from top level makefile"
+
+   * libcore/
+77335d6 Modify j.t.DateFormat.set24HourTimePref() to take a Boolean
+
+   * packages/apps/Contacts/
+2448899 De-holoize contact group activity.
+
+   * packages/apps/Settings/
+eb93343 Settings: fix NPE in setup wizard
+bf620ae lockscreen: Forward port option to pass swipe-up-to-unlock
+6e5e8e7 Settings: Enable storage manager
+
+   * packages/inputmethods/LatinIME/
+cb3106f LatinIME: Remove gesture preference if gesture lib is unavailable
+
+   * platform_manifest/
+5722f94 Revert "manifest: Track local llvm-Snapdragon repo"
+
+   * vendor/qcom/binaries/
+722fb9f Merge pull request #1 from zwliew/cm-14.1
+7f7e01e msm8960: Import graphics libraries
+
+====================
+     11-20-2016
+====================
+
+
+   * device/qcom/sepolicy/
+303bb6b qcom_sepolicy: Not CM but AICP
+
+   * packages/apps/AicpExtras/
+8703824 AE: Fix build
+83c8767 AE: Update AICP Yoga!
+
+   * packages/apps/CMParts/
+1ba9d61 cmparts: Remove noop fields when LED can't pulse
+
+   * packages/apps/Settings/
+520a5ec SimSettings: Disable entry for missing sim
+
+   * platform_manifest/
+10fc108 manifest: Track local device_qcom_sepolicy
+
+   * system/sepolicy/
+6751d51 Add policy to SELinux to allow ViPER4Android in enforcing mode
+
+====================
+     11-19-2016
+====================
+
+
+   * device/qcom/common/
+4b8412d qc: Fix makefiles
+
+   * frameworks/base/
+71341fc l10n: Add Japanese translations
+
+   * packages/apps/AicpExtras/
+c9b115f AE: Greek Translation
+
+   * packages/apps/Settings/
+3b1d15b l10n: Update Japanese translations
+3f8c6c5 SimPreferenceDialog: Set onDismiss() listener to finish the activity
+
+   * packages/apps/Snap/
+a47fdba snap: Remove duplicate LOCAL_PRIVILEGED_MODULE
+
+   * packages/apps/Trebuchet/
+c39bccb Disabling widget debug
+
+   * vendor/aicp/
+b86ca6c bullhead: update fingerprint/description to N5D91L
+
+   * vendor/qcom/binaries/
+6898fae Fix makefiles
+
+====================
+     11-18-2016
+====================
+
+
+   * device/xiaomi/armani/
+f5b3476 Revert "ship Gello"
+dbf91c5 Cleanup and update init.armani.usb.rc
+27112a7 audio: remove startOffsetMs from media_profile
+89af75e Remove filesystem utils
+2f4f6b8 Switch to bullhead WideVine
+9ffddba audio: Remove multichannel output
+3a2cc46 bluetooth: Disable CLOCK_BOOTTIME_ALARM
+c7326a2 Build with SDCLANG
+
+   * frameworks/av/
+4b9768e OMXNodeInstance: More legacy HAL1 fixes after merge of android-7.1.0_r7
+
+   * frameworks/base/
+1596d4f Revert "Revert "zygote: Allow device to append extra whitelisted paths""
+927ae94 data: sounds: add Timer alarm sound
+fc4c131 Fix unpinning on device with Navigation Bar
+1ab58ee Fix end call by pressing power button
+
+   * hardware/qcom/display/
+eaedadc display: Don't use gnu-oldstyle field designators
+
+   * packages/apps/Settings/
+b063e3c Settings: use CMHW serial number
+86409ca Settings: update About screen device model fields
+38a4723 Fix device storage menu when using Adopted Storage
+c455e97 Settings: Make proximity wake string more accurate
+
+   * packages/services/Telecomm/
+bbf1d24 telecom: Ensure that we always update bluetooth in dsda case
+
+   * vendor/aicp/
+6b6c46a vendor_aicp: now product.mk's are NFX Enhanced free
+0ce8ec4 vendor_aicp: config: Remove enhanced NFC feature
+b313b92 cm: Update APNs
+
+====================
+     11-17-2016
+====================
+
+
+   * packages/apps/AicpExtras/
+13b5a5b AE: slight cleanup
+
+   * packages/apps/Settings/
+f658ff6 Fix NPE when ejecting the portable storage
+
+   * packages/inputmethods/LatinIME/
+ed9724f LainIME: add unicode 9.0 chars
+
+   * vendor/aicp/
+9378742 n7100: Fix sound
+
