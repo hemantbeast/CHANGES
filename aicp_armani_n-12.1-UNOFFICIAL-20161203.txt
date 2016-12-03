@@ -1,0 +1,851 @@
+====================
+     12-03-2016
+====================
+
+
+   * device/xiaomi/armani/
+7e9b071 armani: Switch to the unified LED capabilities overlay
+2a82f43 sepolicy: Fixes to get encryption working
+3af65a4 armani: Switch to /dev/block/bootdevice
+
+   * external/vim/
+b08aeec Merge tag 'v8.0.0117' into HEAD
+
+   * frameworks/base/
+16b1dba SystemUI: Add VectorDrawable battery styles
+4226add Tethering: Turn off wifi hotspot after inactivity(1/3)
+
+   * kernel/xiaomi/armani/
+7c490ae armani: defconfig: Set the scheduler base frequency to 100Hz
+3c43a54 defconfig: enable sched_clock and process_reclaim
+2d0ec37 lowmemorykiller: adjust the minfree value to 200MB
+ab444f1 new helper: single_open_size()
+fc90272 Revert "mm: fix calculation of dirtyable memory"
+3664fea  mm: process_reclaim: Tune and add monitoring sysfs
+9aed9c2 mm: process_reclaim: Don't use work_pending()
+59f9998 Revert "mm: process_reclaim: fix reclaim skip on low efficiency"
+7e0e5a2 mm: process_reclaim: use unbounded cpu workqueue
+bafb57e mm: process_reclaim: fix reclaim skip on low efficiency
+40d9547 mm: process_reclaim: do not iterate over stale task structs
+8771f57 mm: process reclaim: vmpressure based process reclaim
+273945f mm: Support address range reclaim
+9522aa0 mm: Enhance per process reclaim to consider shared pages
+70cd1d3 mm: Per process reclaim
+3c9e044 mm, oom: make dump_tasks public
+7c476f1 nick kvfree() from apparmor
+cca534d sched: Add controls for sched features
+31c3a2b ReadAhead: Make it 256 kb
+f9e8c77 cpufreq: Break out early when frequency equals target_freq
+ab7bd7f msm: cpufreq: Break early if target freq is current freq
+2b5a3f4 sched/debug: disable sched debug sysrq by default - increase performance
+da80232 sched: LOAD_FREQ (4*HZ+61) avoids loadavg Moire. From http://ripke.com/loadavg/moire
+c2d8615 init: Kconfig: Don't force DEBUG_KERNEL
+d4b6556 init: debug: bye bye
+e56b924 ANDROID: binder: Clear binder and cookie when setting handle in flat binder struct
+8ee2d7e ARM: perf: reject groups spanning multiple hardware PMUs
+9e73534 ion: use %pk instead of %p which respects kptr_restrict sysctl
+28901ed arm64: dma-mapping: always clear allocated buffers
+94f915b netfilter: x_tables: validate e->target_offset early
+1150560 msm: camera: Restructure data handling to be more robust
+9c7b08f msm: sensor: Avoid potential stack overflow
+8dbc9116 msm: vidc: replace the remaining %p with %pK
+472e013 msm: kgsl: Change %p to %pK in debug messages
+ec67ae7 msm: camera: restructure data handling to be more robust
+6809bbb msm: camera: isp: Fix warning and errors based on static analysis
+592d7d1 msm: vidc: use %pK instead of %p which respects kptr_restrict sysctl
+0a37d6d msm: camera: sensor: Fix use after free condition
+9869b61 msm: camera: Assign NULL after freeing memory
+7036617 qseecom: Change format specifier %p to %pK
+20b01be fuse: break infinite loop in fuse_fill_write_pages()
+5c5bb81 bluetooth: Validate socket address length in sco_sock_bind().
+78f72ce ipv6: addrconf: validate new MTU before applying it
+75369fb ext4: fix unjournaled inode bitmap modification
+6845e66 defconfig: enable ntfs and exfat fs
+2614e74 bfq-sched: Forcefully lookup entities when the cache is inconsistent
+25286a7 exFAT support
+46e2375 Turn ON display when HS Jack is detected
+8e3e4f1 sound: add sound control to increase headphones, speaker and mic gain.
+6f0b9a2 asm: Added optimized ARM RWSEM algorithm
+1385c16 futex: Make lookup_pi_state more robust
+e74c114 futex: Always cleanup owner tid in unlock_pi
+a768509 futex: Validate atomic acquisition in futex_lock_pi_atomic()
+76458c5 af_unix: use freezable blocking calls in read
+f514f49 sigtimedwait: use freezable blocking call
+7f76bb6 nanosleep: use freezable blocking call
+41a48b8 futex: use freezable blocking call
+229aef5 select: use freezable blocking call
+7edbbdd binder: use freezable blocking calls
+a9b8b67 freezer: add new freezable helpers using freezer_do_not_count()
+7c25bfb freezer: convert freezable helpers to static inline where possible
+3931bf5 freezer: convert freezable helpers to freezer_do_not_count()
+9b88cfa freezer: skip waking up tasks with PF_FREEZER_SKIP set
+d376a92 lockdep: check that no locks held at freeze time
+b7dfeb5 lockdep: remove task argument from debug_check_no_locks_held
+4d01f69 freezer: add unsafe versions of freezable helpers for CIFS
+0d646f3 freezer: add unsafe versions of freezable helpers for NFS
+1bf878c HACK: ARM: disable sleeping while atomic warning in do_signal
+0674b1c Revert "freezer: comment out might_sleep()"
+751ca30a freezer: add missing mb's to freezer_count() and freezer_should_skip()
+b70b883 ASoC: msm-lsm-client: Use freezable wait for EVENT_STATUS ioctl
+191c5a3 fs/namei.c: fix potential memory leak in path_lookupat
+b45800e Lock initial TCP window size to 64k (Improves network ping and output)
+7385d05 af_unix: speedup /proc/net/unix
+d9daa39 cpufreq: Return directly in __cpufreq_get if policy is NULL
+f56c4a0 cpufreq: interactive: Record hispeed_validated_time in timer function
+fd51688 soc: qcom: rq_stats: Pass correct cpu id to update_average_load function
+a601336 cpufreq: interactive: Exercise hispeed settings at a policy level
+7bbf1e3 cpufreq: interactive: Make window alignment optional
+84eeacc cpufreq: interactive: Add max_freq_hysteresis feature
+f5ee52b cpufreq: conservative: Set some usable defaults
+fd93716 cpufreq_conservative: Improve support for micro idle accounting
+6a78b71 cpufreq: cpu-boost: Re-issue boosts above minimum frequency
+136606a cpufreq: cpu-boost: Resolve deadlock when waking up sync thread
+516414a soc: qcom: rq_stats: remove the redundant iowait check
+1beba8c cpufreq: ondemand: Calculate load_at_max_freq based on current policy->max
+56c429e cpufreq: ondemand: Remove sync thread feature
+1294731 cpufreq: ondemand: Remove input boost
+95fb6bb cpufreq: interactive: Use del_timer/add_timer_on to rearm timers
+584dfb0 cpufreq: interactive: Round up timer_rate to match jiffy
+5dbc547 cpufreq: interactive: Reset last evaluated jiffy in idle callback
+17ee80c cpufreq: interactive: Align timer windows for all CPUs
+11d664a cpufreq: interactive: Squashed cleanup patches
+55ce520 cpufreq: Move get_cpu_idle_time() to cpufreq.c
+a64545e cpufreq: interactive: Move definition of cpufreq_gov_interactive downwards
+47ae2b0 cpufreq: interactive: Remove unnecessary cpu_online() check
+9c93206 cpufreq: interactive: Don't reset sampling down factor at max freq
+83a1be2 cpufreq: Sync on thread migration optimizations
+847fb1f PM: devfreq: Use high priority workqueue
+8963265 Revert "tracing/sched: Track per-cpu rt and non-rt cpu_load."
+3f1210b cpufreq: ondemand: Use interruptible wait to not affect load average
+9736459 sched/fair: improve fairness efficiency
+06299f7 spmi: prevent showing the address of spmidev
+458162a ion: disable system contig heap
+2c802da Fix incorrect conflict resolution in "vfs: Add setns support for the mount namespace"
+5fcdf08 proc: fix build broken by proc inode per namespace patch
+bca8f12 msm: vidc: add ion_handle checking before mapping buffers
+772b25b UPSTREAM: memcg: Only free spare array when readers are done
+97954d6 mm: fix prctl_set_vma_anon_name
+bca79b6 HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
+cabce6b sdcardfs: fix external storage exporting incorrect uid
+c52737b sdcardfs: Flag files as non-mappable
+7f92136 vfs: make AIO use the proper rw_verify_area() area helpers
+761f552 mnt: Fail collect_mounts when applied to unmounted mounts
+77dd547 armani: defconfig: Lower the scheduler base frequency to 200Hz
+016fc6ac HID: core: prevent out-of-bound readings
+6b50f14 BACKPORT: tty: Prevent ldisc drivers from re-using stale tty fields
+bdf1a7b BACKPORT: audit: fix a double fetch in audit_log_single_execve_arg()
+8615ea6 perf: Fix race in swevent hash
+a3d3bee ALSA: usb-audio: Fix double-free in error paths after snd_usb_add_audio_stream() call
+e1c1903 ALSA: usb-audio: Minor code cleanup in create_fixed_stream_quirk()
+46c14fa sg: Fix double-free when drives detach during SG_IO
+028dbb8 msm: camera: Restructure data handling to be more robust
+50449ef msm: sensor: Avoid potential stack overflow
+e9164f9 msm: camera: Validate size param before allocating memory
+8cdb153 platform: msm: sensor: Fix out of bounds and null pointer.
+3e21cad mm: remove gup_flags FOLL_WRITE games from __get_user_pages()
+5cb29a1 SoC: soc: change audio drivers to use %pK
+9e53248 ASoC: msm: lock read/write when add/free audio ion memory
+f38e3b5 mm: do not sleep in balance_pgdat if there's no i/o congestion
+a875436 ASoC: msm: initialize the params array before using it
+38a11dd ASoC: utils: initialize dummy_codec before use
+083572f ASoC: check for null function pointer for dummy device read/write
+bf16796 BACKPORT: Bluetooth: Fix potential NULL dereference in RFCOMM bind callback
+3a9047d msm: sps: Avoid pipe disconnect while IRQ is in progress and viceversa
+45f23a6 msm: sensor: validate the i2c table index before use
+c9f228c cpufreq: Fix broken uevents for cpufreq governor and cpu devices
+0e4fe2a drivers: cpufreq: Send a uevent when governor changes
+b9ce09e defconfig:: disabled perf events
+871b642 defconfig: disable unwanted logger debug and stats
+979939a Disable Tracer Part 2
+6863126 Remove Perf Events
+c03850a Audit: Disable Audit
+7ee3217 mmc: Do not build tests
+7200454 Disable Tracer
+dec919a cfq-iosched: fix the setting of IOPS mode on SSDs
+04256b9 block: Make CFQ default to IOPS mode on SSDs
+e943ea2 block: Disable IO Stats
+21dc8fd block: Disable add_random
+57ade10 block: row: add magic values
+dc73f70 block: deadline: Optimize for non-rotational
+0465a94 deadline: Allow 0ms deadline latency, increase the read speed
+abf366b fix infoleak in rtnetlink
+cd3cdea ALSA: control: Fix replacing user controls
+270050f fs: ext4: disable support for fallocate FALLOC_FL_PUNCH_HOLE
+8302a94 binder: prevent kptr leak by using %pK format specifier
+e893be5 tcp: fix use after free in tcp_xmit_retransmit_queue()
+3b634ed defconfig update
+8f437e9 unix: avoid use-after-free in ep_remove_wait_queue
+fcfb818 msm: mdss: hide kernel addresses from unprevileged users
+f437479 qcedev: Validate Source and Destination addresses
+e87602a ASoC: msm: set pointers to NULL after kfree
+e3fe053 msm: smp2p2: Fix kernel address leak
+f7b19f3 msm: crypto: Fix integer over flow check in qcrypto driver
+6a0038d msm: ipa: fix potential race condition ioctls
+0fa042e msm: crypto: Fix integer over flow check in qcedev driver
+9b4f15c msm : dma_test: Initialize newly allocated memory
+827195f cpu: send KOBJ_ONLINE event when enabling cpus
+3bc17cb ASoC: msm: qdsp6v2: Fix offload gapless transition
+938556c qseecom: Validate pointer offset in qseecom_send_modfd_cmd
+02a3e46 diag: Fix possible underflow/overflow issues
+640424b media: Init the reserved fields of struct media_link_desc
+e0e56b6 ASoC: compress: fix unsigned integer overflow check
+0a5da1c ASoC: msm: audio-effects: misc fixes in h/w accelerated effect
+21d8f50 msm: perf: Do not allocate new hw_event if event is duplicate.
+7e24eff ASoC: msm: Add bounds checking to ADM get params
+bec783c msm_fb: display: Enable display debugging through mdp debugfs
+28b40f6 msm: display: Validate MDP, MDDI and HDMI debug reg offset
+a759363 timer: optimize apply slack
+a2ca2e9 wakeup: add toggle for msm_hsic_host wakelock
+43a2de6 Replace %p with %pK to prevent leaking kernel address
+8d6e539 ASoC: wcd9xxx: modify sequence post SSR
+de3b693 ASoC: wcd93xx: Remove deadlock for ANC use-cases
+7acb4d9 ASoC: msm: qdsp6v2: Cleanup of compress offload drivers
+5d289b78 ASoC: msm: qdsp6v2: Cleanup of audio drivers
+eca626d Fix uninitialized div_s64 for gcc 4.9
+770e69c msm: camera: ispif: Validate VFE num input during reset
+7c4fb44 ASoC: msm: audio-effects: fix stack overread and heap overwrite
+af3fadc ASoC: msm: disable unwanted module
+13c4ff0 arm: lib: Fix makefile bug
+06831e6 netfilter: x_tables: check for size overflow
+ef6aaf0 ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt
+f896782 ALSA: timer: Fix leak in events via snd_timer_user_ccallback
+09427d4 ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS
+9a212e0 genirq: Do not consider disabled wakeup irqs
+8b90bdb KEYS: Fix race between read and revoke
+35ddadd Input: aiptek - fix crash on detecting device without endpoints
+daddc41 Input: aiptek - adjust error-handling code label
+98993a0 USB: cdc-acm: more sanity checking
+32316d0 usbnet: cleanup after bind() in probe()
+82b4551 ALSA: hrtimer: Fix stall by hrtimer_cancel()
+4637fe8 pipe: limit the per-user amount of pages allocated in pipes
+58659e6 ALSA: timer: Harden slave timer list handling
+43e20de ALSA: timer: Fix race among timer ioctls
+dc25239 ALSA: timer: Fix double unlink of active_list
+d8cec5d ALSA: usb-audio: avoid freeing umidi object twice
+7da4a27 pipe: iovec: Fix OOB read in pipe_read()
+d4d4c91 pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic
+42ab139 tty: Fix unsafe ldisc reference via ioctl(TIOCGETD)
+4209cf4 ft5x06: track in_call status from q6voice
+8fa9597 ft5x06: add doubletap2wake
+3367aea mmc: core: Expose use_spi_crc module parameter in sysfs
+6366847 msm: ipc_socket: fix leak of kernel memory to userspace
+047b7db ARM: Xiaomi armani changes
+7eaafa8 compilation fixes
+c024bc1 slimbus overclock
+6a57495 arm/kernel/irq.c: remove irq affinity warnings
+ebf4b65 fs/dcache.c: Fix the too small buffer for dname
+58ff911 msm: mdss: Use interruptible threads
+e32188a fs: Tweak mount options for all partitions
+5569819 msm: memutils: 8084: memcpy, memmove optimization
+eba406f msm: memutils: memcpy, memmove optimization
+373a727 msm: memutils: memcpy, memmove, copy_page optimization
+a36df27 arm: vfpmodule: Defer initialization
+ff108be msm: camera_v2: Create jpeg debugfs
+c7d8e20 msm: sps: Register SPS IRQ with IRQF_NO_SUSPEND flag
+af42ed6 msm: mdss: if the event is interrupted 'continue' earlier
+0fcf7bf msm: Use interruptible wait to not affect load average
+13b8026 msm: slimbus: use interruptible wait to reduce system's load average
+91147e3 mdss: use an interruptible thread on edp to reduce load_average
+a36c13e wakeup: try to deactivate a wakeup source when the user explicitly disables it from userspace
+c9a76e2 wakeup: add toggle for bluesleep wakelock
+ae2e306 wakeup: add toggle for bluesleep wakelock
+804b52b wakeup: add toggle for bluedroid_timer wakelock
+8fe8cb0 wakeup: add userspace knobs for users to filter some common excesive wakelocks
+af699a1 armani: defconfig: update and regenerate.
+cbfb724 BACKPORT: fs: Add TTY PM IOCTLs to compat table
+4782e54 sdcardfs: Remove stale dentries when reusing an inode.
+cbd923b sdcardfs: Fix issue with d_child move
+dfa6ad8 sdcardfs: Added top to sdcardfs_inode_info
+1b143bf sdcardfs: Fix locking
+863a5e3 sdcardfs: Check for other cases on path lookup
+c5ab5e5 sdcardfs: override umask on mkdir and create
+e07cb37 ANDROID: sdcardfs: fix itnull.cocci warnings
+d2f55df sdcardfs: Truncate packages_gid.list on overflow
+3b2a702 fuse: Add support for d_canonical_path
+3bf10a5 vfs: change d_canonical_path to take two paths
+f07d0b4 sdcardfs: remove unneeded __init and __exit
+7ae0281 sdcardfs: Remove unused code
+6087649 inotify: Fix erroneous update of bit count
+45f435b sdcardfs: Add support for d_canonicalize
+7d08e0c vfs: add d_canonical_path for stacked filesystem support
+d46acbe sdcardfs: Bring up to date with Android M permissions:
+6398d7e sdcardfs: Changed type-cast in packagelist management
+ff43e22 sdcardfs: Port to 3.4
+e26bb9cc get rid of kern_path_parent()
+e4bc930 Included sdcardfs source code for kernel 3.0
+eaf1737 move d_rcu from overlapping d_child to overlapping d_alias
+b22f225 debugfs: debugfs_remove_recursive() must not rely on list_empty(d_subdirs)
+ae471d9 fixes for building with gcc 4.9
+c9afe92 BACKPORT: tcp: make challenge acks less predictable
+707ac9c netfilter: x_tables: make sure e->next_offset covers remaining blob size
+e568daf netfilter: x_tables: fix unconditional helper
+3f4f792 ipv4: Don't do expensive useless work during inetdev destroy.
+482ede7 net: ipv4: tcp: Get tcpi_count via file_count() not direct access
+149fb20 net: add validation for the socket syscall protocol argument
+9329cee net: fix iterating over hashtable in tcp_nuke_addr()
+4948283 net: add length argument to skb_copy_and_csum_datagram_iovec
+61e0d94 tcp_cubic: do not set epoch_start in the future
+9ffd97e tcp_cubic: better follow cubic curve after idle period
+7a41c9c udp: fix behavior of wrong checksums
+4833cb3 net: tcp: null pointer crash in __inet_put_port
+daa9d13 ipv4: try to cache dst_entries which would cause a redirect
+989779b tcp: undo spurious timeout after SACK reneging
+a31a413 tcp: preserve ACK clocking in TSO
+dbda0d4 inet: limit length of fragment queue hash table bucket lists
+e5a55f0 tcp: fix skb_availroom()
+ae54634 net/ipv4: Ensure that location of timestamp option is stored
+d27d545 tcp: fix double-counted receiver RTT when leaving receiver fast path
+ea4fa97 ipv6: use a stronger hash for tcp
+7b11362 tcp: fix for zero packets_in_flight was too broad
+2f56018 tcp: frto should not set snd_cwnd to 0
+0244d2e net: prevent setting ttl=0 via IP_TTL
+58889de tcp: RFC 5961 5.2 Blind Data Injection Attack Mitigation
+cb32f3a tcp: tcp_replace_ts_recent() should not be called from tcp_validate_incoming()
+c2bcdcc tcp: refine SYN handling in tcp_validate_incoming
+3de310f tcp: implement RFC 5961 4.2
+c16b878 tcp: implement RFC 5961 3.2
+a159f1a inet: Fix kmemleak in tcp_v4/6_syn_recv_sock and dccp_v4/6_request_recv_sock
+059e6a7 inet_diag: validate port comparison byte code to prevent unsafe reads
+f3016d3 inet_diag: avoid unsafe and nonsensical prefix matches in inet_diag_bc_run()
+e0d03cb inet_diag: validate byte code to prevent oops in inet_diag_bc_run()
+efcf6c7 inet_diag: fix oops for IPv4 AF_INET6 TCP SYN-RECV state
+e90129d ipv4: ip_check_defrag must not modify skb before unsharing
+5178d96 armani: defconfig: Set CONFIG_HZ to 300
+b33c385 wlan: fix buffer overflow in linkspeed ioctl
+f649cdd wlan: Remove the support for setwpaie ioctl
+a042b73 Adds bound check on reg_cfg_cmd->u.dmi_info.hi_tbl_offset.
+dcaa420 ASoC: msm: qdsp6v2: check param length for EAC3 format
+a3392a9 wcnss: Avoid user buffer overloading for write cal data
+c0c310e selinux: nlmsgtab: add SOCK_DESTROY to the netlink mapping tables
+1cf36fd UPSTREAM: selinux: fix bug in conditional rules handling
+62b7f95 selinux: Android kernel compatibility with M userspace
+93b013c selinux: extended permissions for ioctls
+4691812 selinux: remove unnecessary pointer reassignment
+d52b30c Revert "SELinux: per-command whitelisting of ioctls"
+04a6888 Revert "SELinux: use deletion-safe iterator to free list"
+ec895d5 Revert "SELinux: ss: Fix policy write for ioctl operations"
+bc37b96 net: diag: Add the ability to destroy a socket.
+01d388c qpnp-bms: fix possible uninitialized variables
+9ff7cdb adreno: fix possible uninitialized variable
+d5ce4d7 FROMLIST: arm: mm: support ARCH_MMAP_RND_BITS.
+55be3e5 FROMLIST: mm: mmap: Add new /proc tunable for mmap_base ASLR.
+28f8258 Revert "HACK: time: Disable alarmtimer"
+d270559 staging: android: Remove unused Kconfig option
+ebe1d0d staging: android-alarm: Fix power off alarm
+0da61d2 staging: alarm-dev: information leak in alarm_ioctl()
+48ec8ab Revert "alarmtimer: set power off alarm to be triggered on time"
+674f1a3 alarm : Fix the race conditions in alarm-dev.c
+a8790c3 power: qpnp-charger: Convert to alarmtimers
+b41d173 drivers: lpm-levels: Provide API to set wake up time from suspend
+8b38e13 msm: thermal: Remove alarm support in KTM
+d38a5f0 rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init
+221bf20 qpnp-rtc: clear alarm register when rtc irq is disabled
+afe8406 rtc: alarm: Add power-on alarm feature
+716fa46 staging: alarm-dev: Refactor alarm-dev ioctl code in prep for compat_ioctl
+ae5f2c6 staging: alarm-dev: Drop pre Android 1.0 _OLD ioctls
+1153328 alarmtimer: set power off alarm to be triggered on time
+ab8f979 staging: android-alarm: Switch from wakelocks to wakeup sources
+8620302 staging: Remove the Android logger driver
+aec448b rtc: Remove old alarm driver and switch to new implementation
+29eede8 rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init
+26c6a5d rtc: alarm: Add power-on alarm feature
+cb8e923 rtc: alarm: Change wake-up source
+5b70895 alarmtimer: add verification for rtc dev in power_on_alarm_init
+ae4bf07 alarm: init power_on_alarm in alarm_dev_init
+ccd2093 rtc: alarm: Fix data handling issue with alarm->type
+6fd4d40 alarmtimer: Lock k_itimer during timer callback
+136eea3 alarmtimer: Do not signal SIGEV_NONE timers
+80e551d alarmtimer: Return relative times in timer_gettime
+9f3b2da rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init
+927bd31 rtc: alarm: set power_on_alarm again when calling alarmtimer_resume
+360fe5b alarmtimer: add rtc irq support for alarm
+e7cb703 alarmtimers: Squash upstream changes
+be07f5f alarmtimer: Fix bug where relative alarm timers were treated as absolute
+c8b2361 timerfd: support CLOCK_BOOTTIME clock
+b75e0b2 timerfd: add alarm timers
+d988b47 alarmtimer: add alarm_expires_remaining
+5974d4e alarmtimer: add alarm_start_relative
+e86d8ad alarmtimer: add alarm_forward_now
+aed4ad7 alarmtimer: add alarm_restart
+ab8bcbf alarmtimer: Use hrtimer per-alarm instead of per-base
+8b02d02 alarmtimer: implement minimum alarm interval for allowing suspend
+dccba34 touchscreen: Fix gen_vkeys for several touchscreen driver
+b7ea375 msm: kgsl: Defer adding the mem entry to a process
+2888a73 net: ipc_router: Bind only a client port as control port
+cfd648a ashmem: Validate ashmem memory with fops pointer
+163aca8 cpu: fix section mismatch warnings with __hotcpu_register
+0bcee44 profile: Fix CPU hotplug callback registration
+36c670a drivers/base/topology.c: Fix CPU hotplug callback registration
+f4b8296 arm, hw-breakpoint: Fix CPU hotplug callback registration
+bebd831 CPU hotplug, perf: Fix CPU hotplug callback registration
+c3dac15 net/core/flow.c: Fix CPU hotplug callback registration
+867f871 mm, vmstat: Fix CPU hotplug callback registration
+7576b43 perf, cpu hotplug: Use cached value of smp_processor_id()
+42eed61 perf, cpu hotplug: Run CPU_STARTING notifiers with irqs disabled
+2b2d77e Doc/cpu-hotplug: Specify race-free way to register CPU hotplug callbacks
+db1fc35 trace, ring-buffer: Fix CPU hotplug callback registration
+cd4e556 CPU hotplug: Provide lockless versions of callback registration functions
+2dc7de8 sched_clock: Avoid corrupting hrtimer tree during suspend
+c29f0f7 arm: arch_timer: Update for 64bit sched_clock
+ddb03a1 sched_clock: Add support for >32 bit sched_clock
+41346a8 sched_clock: Use an hrtimer instead of timer
+a07bca7 sched_clock: Use seqcount instead of rolling our own
+36a59d4 clocksource: Extract max nsec calculation into separate function
+71242f7 ARM: sched_clock: Load cycle count after epoch stabilizes
+b399ec9 sched_clock: Make ARM's sched_clock generic for all architectures
+47984df msm: kgsl: Fix idle timer sysfs after removing references to HZ
+69f1505 msm: kgsl: Fix direct references to HZ
+822baf7 ARM: Allow selection HZ values
+6dd2701 msm: kgsl: set the correct max_state
+21a0283 msm: kgsl: Bump the GPU frequency for long blocks of processing
+f768730 mmc: move to a SCHED_FIFO thread
+d4dfe36 cpuidle: Wakeup only cpus for which qos has changed.
+c4102c8 qos: Pass the list of cpus with affected qos to notifer
+97b5a56 QoS: Enhance framework to support cpu/irq specific QoS requests
+21f8518 PM / QoS: Fix workqueue deadlock when using pm_qos_update_request_timeout()
+6575b86 PM: don't use [delayed_]work_pending()
+543bef7 PM / sysfs: replace strict_str* with kstrto*
+7f591b1 PM / QoS: Introduce request and constraint data types for PM QoS flags
+3027b40 PM / QoS: Add return code to pm_qos_get_value function.
+86ebf87 md: use kzalloc() when bitmap is disabled
+0931227 mm: let kswapd test movable zone watermark with ALLOC_CMA
+8b194c0 mm/compaction.c: fix warning of 'flags' may be used uninitialized
+2cc2f8b pagemap: do not leak physical addresses to non-privileged userspace
+3968e09 __ptrace_may_access() should not deny sub-threads
+98a9fa8 mm: Fix NULL pointer dereference in madvise(MADV_WILLNEED) support
+d8314cb msm: remote_spinlock: swp{b} is deprecated for ARM>v5
+14f8a13 mm: ksm: Optimize defaults
+63a58c5 mm, oom: base root bonus on current usage
+a78c413 mm: vmpressure: scale pressure based on reclaim context
+efa0896 mm: Add notifier framework for showing memory
+5c214cc mm: vmpressure: allow in-kernel clients to subscribe for events
+a83b904 memcg: add memory.pressure_level events
+94c1406 atomic: implement generic atomic_dec_if_positive()
+e1c08a7 lowmemorykiller: remove duplicate header include
+cb36324 lowmemorykiller: avoid false adaptive LMK triggers
+aa9c533 lowmemorykiller: Don't count swap cache pages twice
+a8ff0d4 lowmemorykiller: adapt to vmpressure
+3d489e5 lowmemorykiller: Do proper NULL checks
+2c0e5b1 lowmemorykiller: Run the lowmemory notifier when killing
+01b8d6e lowmemorykiller: Dump out slab state information
+5ccfe8f lowmemorykiller: use for_each_thread instead of buggy while_each_thread
+1c64a65 lowmemorykiller: enhance debug information
+9824912 lowmemorykiller: make default lowmemorykiller debug message useful
+d7bf459 lowmemorykiller: Account for highmem during kswapd reclaim
+e2a4ff7 armani: defconfig: Enable NEON
+67c2d74 armani: defconfig: Use LZ4 and regen
+8deb300 zram: switch to lz4 as default commpressor
+643bd40 mm/compaction: fix wrong order check in compact_finished()
+2115f23 mm/compaction: make isolate_freepages start at pageblock boundary
+ce7aef2 mm: compaction: detect when scanners meet in isolate_freepages
+d1dc499 mm: compaction: reset cached scanner pfn's before reading them
+6f37f57 mm: use up free swap space before reaching OOM kill
+dce3834 mm: swap: fix swapcache usage for fast swap devices
+c80d4de mm: swap: don't delay swap free for fast swap devices
+a2fbcc7 mm: Backport ZRAM/ZSMALLOC from Google kernel
+e692d8e OOM, PM: OOM killed task shouldn't escape PM suspend
+6f0d5ae introduce for_each_thread() to replace the buggy while_each_thread()
+15a1172 vfs: fix bad hashing of dentries
+2c7b99e slub: fix a possible memory leak
+ec38039 slub: fix incorrect return type of get_any_partial()
+812a7d5 mm: slub: Default slub_max_order to 0
+72d915b mm/slub: don't wait for high-order page allocation
+0fac53f Fix gcc-4.9.0 miscompilation of load_balance() in scheduler
+
+====================
+     12-02-2016
+====================
+
+
+   * external/vim/
+327054d patch 8.0.0117 Problem:    Parallel make fails. (J. Lewis Muir) Solution:   Make sure the objects directory exists. (closes #1259)
+6dbf66a patch 8.0.0116 Problem:    When reading English help and using CTRl-] the language from             'helplang' is used. Solution:   Make help tag jumps keep the language. (Tatsuki, test by Hirohito             Higashi, closes #1249)
+e3af763 patch 8.0.0115 Problem:    When building with Cygwin libwinpthread isn't found. Solution:   Link winpthread statically. (jmmerz, closes #1255, closes #1256)
+b04a98f patch 8.0.0114 Problem:    Coding style not optimal. Solution:   Add spaces. (Ken Takata)
+87f3d20 patch 8.0.0113 Problem:    MS-Windows: message box to prompt for saving changes may appear on             the wrong monitor. Solution:   Adjust the CenterWindow function. (Ken Takata)
+eca626f patch 8.0.0112 Problem:    Tests 92 and 93 are old style. Solution:   Make test92 and test93 new style. (Hirohito Higashi, closes #1289)
+eebd84e patch 8.0.0111 Problem:    The :history command is not tested. Solution:   Add tests. (Dominique Pelle)
+5a030a5 patch 8.0.0110 Problem:    Drop command doesn't use existing window. Solution:   Check the window width properly. (Hirohito Higashi)
+b129a44 patch 8.0.0109 Problem:    Still checking if memcmp() exists while every system should have             it now. Solution:   Remove vim_memcmp().  (James McCoy, closes #1295)
+65e08ee patch 8.0.0108 Problem:    The channel "drop" option is not tested. Solution:   Add a test.
+958dc69 patch 8.0.0107 Problem:    When reading channel output in a timer, messages may go missing.             (Skywind) Solution:   Add the "drop" option.  Write error messages in the channel log.             Don't have ch_canread() check for the channel being open.
+
+   * frameworks/base/
+a5a734f PhoneWindowManager: Tap volume buttons to answer call
+6bd5d16 StatusBarIconController: Fix battery text scaling
+ba03b28 QS: Show # of clients connected to hotspot
+bbb59f2 Automatic translation import
+
+   * vendor/cmsdk/
+77b34c3 CMSDK: Add volume answer call CMSetting
+
+====================
+     12-01-2016
+====================
+
+
+   * build/
+c07e093 binary: Append cc/cxx wrapper to sdclang
+
+   * frameworks/base/
+d981fb9 Add back slim date customizations
+434017f base: SystemUI: QS tile titles visibility
+
+   * hardware/samsung/
+1d09298 macloader: Yet another SEMCO3RD OUI
+
+   * packages/apps/Dialer/
+259a2f1 Dialer: fix IllegalStateException in Search call log
+
+   * vendor/aicp/
+472838c Merge "dior: update product makefile for N" into n7.1
+
+====================
+     11-30-2016
+====================
+
+
+   * device/samsung/galaxys2plus-common/
+0793f78 galaxys2plus: permissive selinux
+e780dcb galaxys2plus: Enable call recording
+d05cb1e galaxys2plus: Enable legacy Camera HAL v1
+fb3c506 galaxys2plus: disable swap on dex2oat
+1fff384 galaxys2plus: Do not start Atlas Service on lowram devices.
+0d0cd7b galaxys2plus: AICP-fy
+
+   * device/samsung/i9105/
+4b3d16a i9105: AICP-fy
+
+   * device/samsung/i9105p/
+a0fef33 i9105p: AICP-fy
+
+   * external/vim/
+0945eaf patch 8.0.0106 Problem:    Cannot use a semicolon in 'backupext'. (Jeff) Solution:   Allow for a few more characters when "secure" isn't set.
+4b785f6 patch 8.0.0105 Problem:    When using ch_read() with zero timeout, can't tell the difference             between reading an empty line and nothing available. Solution:   Add ch_canread().
+
+   * frameworks/base/
+bcd870b sounds: fix typo
+
+   * packages/apps/Contacts/
+a5bf60d Automatic translation import
+
+   * packages/apps/Settings/
+d14a370 Fix translation import
+b28bb35 Automatic translation import
+3128e18 fingerpint: Allow devices to configure sensor location
+
+   * vendor/aicp/
+aacaccd Change maintainer for op3
+140d517 dior: update product makefile for N
+
+   * vendor/xiaomi/
+043ad6c armani: Add missing libdrmdecrypt.so
+9b827ee Properly call common graphics vendor
+
+====================
+     11-29-2016
+====================
+
+
+   * frameworks/base/
+81b745b Automatic translation import
+fa2b300 QSCustomizer: use custom column count
+8270605 settings: Allow accessing CMSettings via settings command
+
+   * frameworks/opt/net/wifi/
+ad493b0 Tethering: Turn off wifi hotspot after inactivity(2/3)
+
+   * hardware/qcom/audio-caf/msm8916/
+db87e2d Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.9' into HEAD
+
+   * hardware/qcom/display-caf/msm8916/
+7de7ab1 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.9' into HEAD
+
+   * hardware/qcom/media-caf/msm8916/
+cf29d4d Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.9' into HEAD
+
+   * packages/apps/Bluetooth/
+68fc042 Automatic translation import
+
+   * packages/apps/Calendar/
+6af343d Automatic translation import
+
+   * packages/apps/Dialer/
+948420f Automatic translation import
+
+   * packages/apps/Messaging/
+ae7e942 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+e05f224 Automatic translation import
+
+   * packages/apps/Settings/
+bcde6d1 Automatic translation import
+b67c3cc Settings: move notification lights settings into notifications options
+
+   * packages/apps/Terminal/
+e8527b5 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+64dbeeb Automatic translation import
+
+   * packages/services/Telephony/
+f955b29 Automatic translation import
+
+   * vendor/aicp/
+894a3a1 Add CM Terminal to the build
+e11bd07 Merge "flo: switch to wifionly tablet config" into n7.1
+
+====================
+     11-28-2016
+====================
+
+
+   * device/xiaomi/armani/
+488cb77 armani: Add missing libdrmdecrypt.so
+
+   * frameworks/base/
+393b723 Make Build.TYPE and Build.FINGERPRINT consistent for apps.
+
+   * frameworks/native/
+208be86 surfaceflinger: Add support for Exynos BGRA mixer
+ba23a7f surfaceflinger: Add support for Exynos HWC services
+
+   * hardware/qcom/audio-caf/msm8952/
+fb8e6f4 Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.9' into cm-14.1-caf-8952
+
+   * hardware/qcom/audio-caf/msm8994/
+1a9395a Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.6' into cm-14.1-caf-8994
+
+   * hardware/qcom/display-caf/msm8952/
+496f6f6 Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.9' into cm-14.1-caf-8952
+
+   * hardware/qcom/display-caf/msm8994/
+5163007 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.6' into cm-14.1-caf-8994
+2a47834 Revert "libhwcomposer: fix unused variable warning when DYNAMIC_FPS is disabled"
+
+   * hardware/qcom/media-caf/msm8952/
+b5a8b18 Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.9' into cm-14.1-caf-8952
+
+   * hardware/qcom/media-caf/msm8960/
+5befa9f mm-video-v4l2: vdec: allocate secure buffer as native_handle
+
+   * hardware/qcom/media-caf/msm8994/
+1f58202 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.6' into cm-14.1-caf-8994
+
+   * packages/apps/AicpExtras/
+0a193e9 Merge "Updated de-translations" into n7.1
+aa5b871 Updated de-translations
+
+   * packages/apps/DUI/
+f53a24e DUI: edited de-translations
+
+   * packages/apps/Settings/
+74945ea Settings: Remove A/B preference if unsupported
+e255b4f Merge "Updated de-translations" into n7.1
+e2144c1 Updated de-translations
+
+   * vendor/aicp/
+2f41709 flo: switch to wifionly tablet config
+eff5fcd aicp: Minor config restructuring
+3d20f45 aicp: move fwb overlay to correct place
+9d6c845 aicp: Fix path to partner_gms includes
+775729c Merge "aicp: Add a mini tablet_wifionly config" into n7.1
+a7f4cb7 aicp: Add a mini tablet_wifionly config
+b16a067 mako: cleanup mako maintainers
+
+====================
+     11-27-2016
+====================
+
+
+   * bootable/recovery/
+6a0693f bootloader_message: allow devices to override
+
+   * device/xiaomi/armani/
+90589e0 armani: Bring DozeSettings up to date
+d1b1b0b armani: Add XiaomiDoze package
+
+   * external/toybox/
+c3a5a80 losetup: Fix loop mounting
+
+   * external/vim/
+f422bcc patch 8.0.0104 Problem:    Value of 'thesaurus' option not checked properly. Solution:   Add P_NDNAME flag. (Daisuke Suzuki)
+8a8199e patch 8.0.0103 Problem:    May not process channel readahead. (skywind) Solution:   If there is readahead don't block on input.
+
+   * frameworks/av/
+a9cb380 audioflinger: Fix audio for WifiDisplay
+
+   * frameworks/base/
+e5d3a3b usb: ensure accessory detached sent on re-attach
+
+   * hardware/qcom/audio-caf/msm8960/
+b9282f8 hal: Port the dock support to non-legacy 8960 hal
+
+   * hardware/samsung/
+fcb04ea consumerir: move consumerir_get_num_carrier_freqs before first use
+6b7dda7 Initial consumer IR HAL commit
+
+   * packages/apps/Settings/
+33da245 Settings: display AICP version in about not CyanogenMod
+
+   * packages/apps/SoundRecorder/
+d309f7d SoundRecorder: Add permission for ACCESS_NETWORK_STATE
+
+====================
+     11-26-2016
+====================
+
+
+   * device/xiaomi/armani/
+6686ebe Add 'misc' entry in fstab
+
+   * external/f2fs-tools/
+d895e39 f2fs-tools: hack headers to unbreak darwin build
+
+   * external/vim/
+7554da4 patch 8.0.0102 Problem:    Cannot set 'dictionary' to a path. Solution:   Allow for slash and backslash.  Add a test (partly by Daisuke             Suzuki, closes #1279, closes #1284)
+
+   * frameworks/base/
+a1c3124 Automatic translation import
+b4e7c3b sounds: remove last trace of Tejat.ogg
+8ad2d5b Remove duplicate audio: Tejat is Argon
+e76fda0 Option to use volume keys to control media volume anytime (2/2)
+2d28d9a Automatic translation import
+d28f989 Automatic translation import
+
+   * packages/apps/CMParts/
+54533bf CMParts: Hide Reset action if Battery LED is not multicolor
+
+   * packages/apps/Settings/
+b3d4d91 Automatic translation import
+642fe1d Automatic translation import
+7dc8e5d Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+2428f11 Revert "UnifiedEmail: not show "help&feedback" in general settiings if url is null"
+
+   * packages/services/Telephony/
+e2447c5 Automatic translation import
+b71382c Automatic translation import
+cd7617e Automatic translation import
+
+====================
+     11-25-2016
+====================
+
+
+   * bootable/recovery/
+e43aa8e fstools: Add libselinux dep
+
+   * build/
+61dcb00 build: kernel: Remove duplicated targets
+200e9b5 build: Set android jack args to global jack server args if existing
+
+   * external/f2fs-tools/
+0d18747 libf2fs_fmt: Add missing src file
+
+   * external/vim/
+031cb74 patch 8.0.0101 Problem:    Some options are not strictly checked. Solution:   Add flags for strickter checks.
+319afe3 patch 8.0.0100 Problem:    Options that are a file name may contain non-filename characters. Solution:   Check for more invalid characters.
+7309528 patch 8.0.0099 Problem:    Popup menu always appears above the cursor when it is in the lower             half of the screen. (Matt Gardner) Solution:   Compute the available space better. (Hirohito Higashi,             closes #1241)
+58c3587 patch 8.0.0098 Problem:    Can't build on MS-Windows. Solution:   Add missing parenthesis.
+833eb1d patch 8.0.0097 Problem:    When a channel callback consumes a lot of time Vim becomes             unresponsive. (skywind) Solution:   Bail out of checking channel readahead after 100 msec.
+fdb07d4 Merge tag 'v8.0.0096' into HEAD
+2cab0e1 patch 8.0.0096 Problem:    When the input or output is not a tty Vim appears to hang. Solution:   Add the --ttyfail argument.  Also add the "ttyin" and "ttyout"             features to be able to check in Vim script.
+dff1f76 vim: Inlcude xxd makefile
+
+   * frameworks/base/
+d1f296b Revert "frameworks: fix system server crash"
+
+   * hardware/qcom/audio-caf/msm8994/
+e7d143c hal: Fix warnings in audio HAL and policy
+
+   * packages/apps/Messaging/
+96e82e9 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+430d7ca Automatic translation import
+
+   * packages/providers/DownloadProvider/
+aee1af3 Automatic translation import
+
+   * packages/providers/MediaProvider/
+03030ca MediaProvider: Add read storage permission
+
+   * vendor/aicp/
+ead7cbb Merge "hammerheadcaf: Restructure device tree" into n7.1
+9e9bd46 extract_utils: Use shasum on macOS
+39d206f vendor_aicp: enable hidden storage manager
+0a67711 flounder: update fingerprint to NRD91N
+d639fc3 hammerheadcaf: Restructure device tree
+
+====================
+     11-24-2016
+====================
+
+
+   * external/libnfc-nci/
+3a0daa8 libnfc-nci: set NXP_CHIP_TYPE based on BOARD_NFC_CHIPSET
+
+   * external/toybox/
+97ad7b2 toybox: Remove -e from @echo
+aea3b6a toybox: kill colors
+
+   * external/vim/
+74f9ec3 Merge tag 'v8.0.0095' into cm-14.1
+a86f7c8 vim: Update logcat syntax detection
+5562de2 syntax: add logcat hilighting
+502656a vim: Update xml plugin for CM
+017aea3 vim: Add spacehi plugin
+8366908 vim/syntax: Add android logcat syntax
+d3a0cf0 vim: Remove vim.sh
+5662caa vim: Add autogenerated configs
+e5ac4be vim: Don't ingore generated configs
+902db9b vim: Import Android makefiles
+
+   * hardware/qcom/audio-caf/msm8994/
+09870a9 policy_hal: fix improper voice-playback concurrency handling
+2c2f7ef hal: Add performance lock for playback usecase
+e7c84b0 hal: update combo device handling
+7cc5363 hal: Add support for LINE out device
+
+   * hardware/qcom/media-caf/msm8916/
+af45104 Merge "mm-video-v4l2: vdec : handle FBD before port-reconfig" into LA.BR.1.2.9_rb1.9
+7ee2cd0 mm-video-v4l2: vdec : handle FBD before port-reconfig
+099dd4d mm-video-v4l2:Fix errors related to pointer dereferencing.
+
+   * packages/apps/AicpExtras/
+1941649 AmPm: Call SystemUI restart dialog
+
+   * packages/apps/Bluetooth/
+523d4ec Automatic translation import
+
+   * packages/apps/Calendar/
+f0333d7 Automatic translation import
+
+   * packages/apps/Dialer/
+dad5de1 Automatic translation import
+
+   * packages/apps/Messaging/
+e8f5b45 Automatic translation import
+
+   * packages/apps/PackageInstaller/
+3661fe4 Automatic translation import
+fd5c73a Fix PackageInstaller FC when tapping on a downloaded apk notification
+
+   * packages/apps/PhoneCommon/
+0f4466a Automatic translation import
+
+   * packages/apps/Settings/
+c1a7df3 Settings: skip Misc/Overcounted battery stats in builds
+
+   * packages/providers/DownloadProvider/
+9a8fb27 Automatic translation import
+
+   * system/sepolicy/
+477f719 Merge "sepolicy: syncro with cm-14.1" into n7.1
+
+   * vendor/aicp/
+2470c4a Add Hydrogen
+
