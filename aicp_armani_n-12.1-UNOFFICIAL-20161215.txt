@@ -1,0 +1,1410 @@
+====================
+     12-15-2016
+====================
+
+
+   * build/kati/
+bc43789 Do not limit threads upon calling legacy GNU make
+42a270b Merge github.com:google/kati into HEAD
+
+   * external/vim/
+a7b10a8 Merge tag 'v8.0.0133' into HEAD
+
+   * frameworks/base/
+b2b117f Merge "SystemUI: Fix clock seconds option" into n7.1
+0bcde75 Merge "Revert "base: dynamic navbar colors"" into n7.1
+c743699 Revert "base: dynamic navbar colors"
+cbeceb0 SystemUI: Fix clock seconds option
+
+   * hardware/samsung/
+6980858 consumerir: Move CLEAR_VARS below LOCAL_PATH
+464c0c9 consumerir: Allow devices to override default configs
+
+   * packages/apps/CMParts/
+66f544c cosmetic fix: s/drawwable/drawable/g
+
+   * packages/apps/Settings/
+20ed335 Couple of grammar/capitalization fixes.
+
+====================
+     12-14-2016
+====================
+
+
+   * frameworks/av/
+238acc4 soundtrigger: fix memory corruption
+
+   * frameworks/base/
+b43f4d8 Automatic translation import
+b9935da Merge tag 'android-7.1.1_r6' into HEAD
+edf17ce Store Network Mode selected in subId Table.
+
+   * packages/apps/AicpExtras/
+4e93a3d Merge "AE: Set correct strings to change-hostname feature" into n7.1
+6ed4d95 Merge "AE: Remove unused strings on n7.1" into n7.1
+
+   * packages/apps/CMParts/
+50ad20c Automatic translation import
+f8ec12f CMParts: Fix Russian auto-power save translation
+a7fa401 NotificationLightSettings: removed unused code
+6c6ceba CMParts: Properly remove perf profile category if unsupported
+
+   * packages/apps/Dialer/
+dfce8a1 Automatic translation import
+
+   * packages/apps/Messaging/
+abe1a3f Automatic translation import
+
+   * packages/apps/PhoneCommon/
+c37a73e Automatic translation import
+
+   * packages/apps/Settings/
+c52d1e2 Automatic translation import
+ec27bcc Merge "Revert "Settings: display: Add wake on plug switch"" into n7.1
+cb76cc0 Revert "Settings: display: Add wake on plug switch"
+46240d4 Merge "Settings: Spanish translations" into n7.1
+
+   * packages/apps/Snap/
+ab3398b Manual translation import
+7b90146 Automatic translation import
+
+   * packages/services/Telephony/
+bd84ac6 Automatic translation import
+
+   * vendor/aicp/
+1e5307d add Samsung S5 au (kltekdi)
+4631cda Revert "products: rewrite AndroidProducts.mk"
+fef86bb products: rewrite AndroidProducts.mk
+1860c73 products: more NFX Enhanced free
+01699bd hammerhead & hammerheadcaf: update build fingerprint & description to M4B30Z
+
+   * vendor/cmsdk/
+3fdfa0f Automatic translation import
+
+====================
+     12-13-2016
+====================
+
+
+   * build/
+d46fc65 Merge tag 'android-7.1.1_r6'
+
+   * frameworks/base/
+fa0fa7f Fix boot loop when upgrading direclty from L to N
+9d044aa Update Italian translation
+c75087f Update Italian translation
+
+   * frameworks/native/
+0c6480d surfaceflinger: hwc1: Add missing mActiveFrameSequence counter
+c1cee9d surfaceflinger: Orient blur layer based on panel mount flip
+
+   * frameworks/opt/telephony/
+225d8cf telephony: Respect user nw mode, handle DSDS non-multi-rat.
+
+   * packages/apps/AicpExtras/
+ca28a32 AE: Remove unused strings on n7.1
+7ce1ff0 AE: Set correct strings to change-hostname feature
+6564e68 AE: Update Italian translation
+37c919c AE: remove lines with ' translatable="false" ' flag
+85eb38d AE: Add an option to change the device hostname
+
+   * packages/apps/Bluetooth/
+7d2f2d1 jni: fix merge failure
+
+   * packages/apps/CellBroadcastReceiver/
+8d4dfa1 Fixes and cleanups after 7.1.0/7.1.1 merge
+
+   * packages/apps/Settings/
+634466e Always show band 0 (Automatic)
+4efebbe Settings: Fix removal of notification pulse LED preference
+e0b8e6e Settings: Spanish translations
+77e2768 Merge "Update Italian translation" into n7.1
+386e56f Update Italian translation
+
+   * packages/apps/SetupWizard/
+e89bc04 SetupWizard: always prompt the user to setup a lockscreen
+
+   * packages/providers/DownloadProvider/
+26850ac Automatic translation import
+
+   * packages/services/CMAudioService/
+b26686e Automatic translation import
+
+   * packages/services/Telecomm/
+431166e Telecomm: Add missing CMSDK dependencies in tests
+
+   * packages/services/Telephony/
+c2259b0 Telephony: add external network selection activity
+477e164 PhoneToggler: persist nw mode change
+e83e480 Port network mode toggle from CM12
+
+   * platform_manifest/
+00a4388 AICP: android-7.1.1_r4 -> android-7.1.1_r6
+
+   * vendor/cmsdk/
+5be83e5 Revert "cmsdk: Add device-specific strings"
+
+====================
+     12-12-2016
+====================
+
+
+   * external/vim/
+fe38b49 patch 8.0.0133 Problem:    "2;'(" causes ml_get errors in an empty buffer.  (Dominique Pelle) Solution:   Check the cursor line earlier.
+4c8980b patch 8.0.0132 Problem:    Test fails because of using :finish. Solution:   Change to return.
+73b484c patch 8.0.0131 Problem:    Not enough test coverage for syntax commands. Solution:   Add more tests. (Dominique Pelle)
+
+   * frameworks/base/
+3a56ac3 core: Adjust power menu icons for 7.1
+315b996 SystemUI: Don't vibrate on touchscreen camera gesture
+409aaf5 Merge "fwb/base: added de-translations for QS-tiles" into n7.1
+0536d59 fwb/base: added de-translations for QS-tiles
+bf9e569 Merge "SystemUI: One edit is more than enough" into n7.1
+b6adf0a Merge "base: dynamic navbar colors" into n7.1
+
+   * hardware/samsung/
+a7a0ecd macloader : add n5120 murata MAC address
+
+   * hardware/ti/wlan/
+f2267c4 wl12xx: Common WLAN KM build target for reuse by devices
+
+   * kernel/xiaomi/armani/
+4c6071d readahead: make context readahead more conservative
+6bb46c6 LZ4 : fix the data abort issue
+c2df127 lib/lz4: Pull out constant tables
+685d943 fix derp
+b4421bc nick kvfree() from apparmor
+1795395 mm: Backport ZRAM/ZSMALLOC from Google kernel
+23dfabd defconfig: enable NF_MATCH_RPFILTER
+936bb08 armani: defconfig: Set the scheduler base frequency to 100Hz
+8f411e1 defconfig: enable sched_clock and process_reclaim
+c721a1d lowmemorykiller: adjust the minfree value to 200MB
+42b09ab new helper: single_open_size()
+cdf1867 Revert "mm: fix calculation of dirtyable memory"
+ae27734  mm: process_reclaim: Tune and add monitoring sysfs
+33de4cd mm: process_reclaim: Don't use work_pending()
+3019ba2 Revert "mm: process_reclaim: fix reclaim skip on low efficiency"
+3510017 mm: process_reclaim: use unbounded cpu workqueue
+8b400d2 mm: process_reclaim: fix reclaim skip on low efficiency
+854195e mm: process_reclaim: do not iterate over stale task structs
+fb9c776 mm: process reclaim: vmpressure based process reclaim
+387c2f2 mm: Support address range reclaim
+f6b916f mm: Enhance per process reclaim to consider shared pages
+61ceb12 mm: Per process reclaim
+598d1d9 mm, oom: make dump_tasks public
+1421f0a ANDROID: binder: Clear binder and cookie when setting handle in flat binder struct
+ac1766e ARM: perf: reject groups spanning multiple hardware PMUs
+02433d4 ion: use %pk instead of %p which respects kptr_restrict sysctl
+72d0086 arm64: dma-mapping: always clear allocated buffers
+df01df4 netfilter: x_tables: validate e->target_offset early
+356259f msm: camera: Restructure data handling to be more robust
+9a40814 msm: sensor: Avoid potential stack overflow
+c881c05 msm: vidc: replace the remaining %p with %pK
+b92e976 msm: kgsl: Change %p to %pK in debug messages
+fb04c3d msm: camera: restructure data handling to be more robust
+13ade6ac msm: camera: isp: Fix warning and errors based on static analysis
+105f812 msm: vidc: use %pK instead of %p which respects kptr_restrict sysctl
+a16c103f msm: camera: sensor: Fix use after free condition
+b78dd39 msm: camera: Assign NULL after freeing memory
+35ce259 qseecom: Change format specifier %p to %pK
+27cdd5f fuse: break infinite loop in fuse_fill_write_pages()
+b56440b bluetooth: Validate socket address length in sco_sock_bind().
+a8a1bc6 ipv6: addrconf: validate new MTU before applying it
+dcf1c43 ext4: fix unjournaled inode bitmap modification
+5dc8105 defconfig: enable ntfs and exfat fs
+4af379d bfq-sched: Forcefully lookup entities when the cache is inconsistent
+790ca41 exFAT support
+90619a2 Turn ON display when HS Jack is detected
+dfccb13 sound: add sound control to increase headphones, speaker and mic gain.
+208c8ed futex: Make lookup_pi_state more robust
+b0565ca futex: Always cleanup owner tid in unlock_pi
+193e011 futex: Validate atomic acquisition in futex_lock_pi_atomic()
+cb5e366 af_unix: use freezable blocking calls in read
+c370562 sigtimedwait: use freezable blocking call
+0d05967 nanosleep: use freezable blocking call
+e082d71 futex: use freezable blocking call
+8cc3de3 select: use freezable blocking call
+b8be15e1 binder: use freezable blocking calls
+42dec99 freezer: add new freezable helpers using freezer_do_not_count()
+82ffaaa freezer: convert freezable helpers to static inline where possible
+b6a2efe freezer: convert freezable helpers to freezer_do_not_count()
+b27def8 freezer: skip waking up tasks with PF_FREEZER_SKIP set
+f21a806 lockdep: check that no locks held at freeze time
+572568a lockdep: remove task argument from debug_check_no_locks_held
+8868d7d freezer: add unsafe versions of freezable helpers for CIFS
+a738635 freezer: add unsafe versions of freezable helpers for NFS
+d6deddb HACK: ARM: disable sleeping while atomic warning in do_signal
+4de8398 Revert "freezer: comment out might_sleep()"
+14dc013 freezer: add missing mb's to freezer_count() and freezer_should_skip()
+847f96e ASoC: msm-lsm-client: Use freezable wait for EVENT_STATUS ioctl
+acfda1d fs/namei.c: fix potential memory leak in path_lookupat
+0fd4e0b Lock initial TCP window size to 64k (Improves network ping and output)
+516bbf8 af_unix: speedup /proc/net/unix
+2fe7052 cpufreq: Return directly in __cpufreq_get if policy is NULL
+2fdbef3 cpufreq: interactive: Record hispeed_validated_time in timer function
+9542769 soc: qcom: rq_stats: Pass correct cpu id to update_average_load function
+eb3ae5d cpufreq: interactive: Exercise hispeed settings at a policy level
+8710d9b cpufreq: interactive: Make window alignment optional
+cceba9f cpufreq: interactive: Add max_freq_hysteresis feature
+df646aa cpufreq: conservative: Set some usable defaults
+0d24543 cpufreq_conservative: Improve support for micro idle accounting
+a2be8bb cpufreq: cpu-boost: Re-issue boosts above minimum frequency
+0fa301f cpufreq: cpu-boost: Resolve deadlock when waking up sync thread
+c6ac348 soc: qcom: rq_stats: remove the redundant iowait check
+926620e cpufreq: ondemand: Calculate load_at_max_freq based on current policy->max
+2f4bedc cpufreq: ondemand: Remove sync thread feature
+16e5abb cpufreq: ondemand: Remove input boost
+ed735fb cpufreq: interactive: Use del_timer/add_timer_on to rearm timers
+5be4e29 cpufreq: interactive: Round up timer_rate to match jiffy
+9847dd0 cpufreq: interactive: Reset last evaluated jiffy in idle callback
+7d349ec cpufreq: interactive: Align timer windows for all CPUs
+288d0ab cpufreq: interactive: Squashed cleanup patches
+026f70a cpufreq: Move get_cpu_idle_time() to cpufreq.c
+b0614af cpufreq: interactive: Move definition of cpufreq_gov_interactive downwards
+51bd643 cpufreq: interactive: Remove unnecessary cpu_online() check
+106834b cpufreq: interactive: Don't reset sampling down factor at max freq
+4d96cfe cpufreq: Sync on thread migration optimizations
+e1bdd2a PM: devfreq: Use high priority workqueue
+e0458c7 Revert "tracing/sched: Track per-cpu rt and non-rt cpu_load."
+e60df89 cpufreq: ondemand: Use interruptible wait to not affect load average
+946fd12 sched/fair: improve fairness efficiency
+514df69 spmi: prevent showing the address of spmidev
+11ea5ef ion: disable system contig heap
+dd250d4 Fix incorrect conflict resolution in "vfs: Add setns support for the mount namespace"
+d719e04 proc: fix build broken by proc inode per namespace patch
+e629fad msm: vidc: add ion_handle checking before mapping buffers
+51589a8 UPSTREAM: memcg: Only free spare array when readers are done
+20e0368 mm: fix prctl_set_vma_anon_name
+f78de0a HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
+4c1c585 sdcardfs: fix external storage exporting incorrect uid
+7ff3cc3 sdcardfs: Flag files as non-mappable
+c29f6d2 vfs: make AIO use the proper rw_verify_area() area helpers
+4c4e0e6 mnt: Fail collect_mounts when applied to unmounted mounts
+9f53658 armani: defconfig: Lower the scheduler base frequency to 200Hz
+ca6b617 HID: core: prevent out-of-bound readings
+0ade1d0 BACKPORT: tty: Prevent ldisc drivers from re-using stale tty fields
+db7a406 BACKPORT: audit: fix a double fetch in audit_log_single_execve_arg()
+a628ec7 perf: Fix race in swevent hash
+9330c48 ALSA: usb-audio: Fix double-free in error paths after snd_usb_add_audio_stream() call
+433f87d ALSA: usb-audio: Minor code cleanup in create_fixed_stream_quirk()
+ad65935 sg: Fix double-free when drives detach during SG_IO
+d03b80c msm: camera: Restructure data handling to be more robust
+18958cd msm: sensor: Avoid potential stack overflow
+552bd6b msm: camera: Validate size param before allocating memory
+7156cff platform: msm: sensor: Fix out of bounds and null pointer.
+5637270 mm: remove gup_flags FOLL_WRITE games from __get_user_pages()
+806a970 SoC: soc: change audio drivers to use %pK
+2b3814c ASoC: msm: lock read/write when add/free audio ion memory
+dd7a827 mm: do not sleep in balance_pgdat if there's no i/o congestion
+89f0df7 ASoC: msm: initialize the params array before using it
+63be2f7 ASoC: utils: initialize dummy_codec before use
+78aef71 ASoC: check for null function pointer for dummy device read/write
+a84d927 BACKPORT: Bluetooth: Fix potential NULL dereference in RFCOMM bind callback
+b2f2b11 msm: sps: Avoid pipe disconnect while IRQ is in progress and viceversa
+ffee1e1 msm: sensor: validate the i2c table index before use
+af789ce defconfig:: disabled perf events
+eb56321 defconfig: disable unwanted logger debug and stats
+293d527 Disable Tracer Part 2
+3cb2eb1 Remove Perf Events
+a28eaf8 Audit: Disable Audit
+65984b1 mmc: Do not build tests
+8cfd0a5 Disable Tracer
+2a0f9c0 cfq-iosched: fix the setting of IOPS mode on SSDs
+9d603c5 block: Make CFQ default to IOPS mode on SSDs
+d2fefe0 block: Disable IO Stats
+2198360 block: Disable add_random
+8df5de6 block: row: add magic values
+4f135c2 block: deadline: Optimize for non-rotational
+96e74f0 deadline: Allow 0ms deadline latency, increase the read speed
+b29d697 fix infoleak in rtnetlink
+aa343f0 ALSA: control: Fix replacing user controls
+d4b4220 fs: ext4: disable support for fallocate FALLOC_FL_PUNCH_HOLE
+c9a6d0e binder: prevent kptr leak by using %pK format specifier
+6b64639 tcp: fix use after free in tcp_xmit_retransmit_queue()
+0679900 defconfig update
+7e8b2b5 unix: avoid use-after-free in ep_remove_wait_queue
+5b5f349 msm: mdss: hide kernel addresses from unprevileged users
+463814b qcedev: Validate Source and Destination addresses
+e62ba35 ASoC: msm: set pointers to NULL after kfree
+12a844d msm: smp2p2: Fix kernel address leak
+cfe693d msm: crypto: Fix integer over flow check in qcrypto driver
+a4a8b97 msm: ipa: fix potential race condition ioctls
+135878d msm: crypto: Fix integer over flow check in qcedev driver
+63539f0 msm : dma_test: Initialize newly allocated memory
+783ed79 cpu: send KOBJ_ONLINE event when enabling cpus
+5947052 ASoC: msm: qdsp6v2: Fix offload gapless transition
+c3e4372 qseecom: Validate pointer offset in qseecom_send_modfd_cmd
+6d05233 diag: Fix possible underflow/overflow issues
+6ed5fcd media: Init the reserved fields of struct media_link_desc
+0382e9f ASoC: compress: fix unsigned integer overflow check
+1398c0b ASoC: msm: audio-effects: misc fixes in h/w accelerated effect
+88784cb msm: perf: Do not allocate new hw_event if event is duplicate.
+f6b7b93 ASoC: msm: Add bounds checking to ADM get params
+efc3289 msm_fb: display: Enable display debugging through mdp debugfs
+3c7e799 msm: display: Validate MDP, MDDI and HDMI debug reg offset
+eb61a0b timer: optimize apply slack
+c9e82b8 wakeup: add toggle for msm_hsic_host wakelock
+ab03ce5 Replace %p with %pK to prevent leaking kernel address
+3c26aa4 ASoC: wcd9xxx: modify sequence post SSR
+d4dbea4 ASoC: wcd93xx: Remove deadlock for ANC use-cases
+b1e0d2b ASoC: msm: qdsp6v2: Cleanup of compress offload drivers
+af7a1be ASoC: msm: qdsp6v2: Cleanup of audio drivers
+4e08561 Fix uninitialized div_s64 for gcc 4.9
+db5d906 msm: camera: ispif: Validate VFE num input during reset
+59fedf7 ASoC: msm: audio-effects: fix stack overread and heap overwrite
+9bacf5a ASoC: msm: disable unwanted module
+5662f31 arm: lib: Fix makefile bug
+98a4548 netfilter: x_tables: check for size overflow
+018e8b0 ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt
+c655c69 ALSA: timer: Fix leak in events via snd_timer_user_ccallback
+8e82234 ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS
+72cb370 genirq: Do not consider disabled wakeup irqs
+54e7dc7 KEYS: Fix race between read and revoke
+46eb334 Input: aiptek - fix crash on detecting device without endpoints
+b688346 Input: aiptek - adjust error-handling code label
+7dbaea3 USB: cdc-acm: more sanity checking
+347f69d usbnet: cleanup after bind() in probe()
+cbfa36e ALSA: hrtimer: Fix stall by hrtimer_cancel()
+c3e14a6 pipe: limit the per-user amount of pages allocated in pipes
+3542358 ALSA: timer: Harden slave timer list handling
+0d9675b ALSA: timer: Fix race among timer ioctls
+4678520 ALSA: timer: Fix double unlink of active_list
+4ad1831 ALSA: usb-audio: avoid freeing umidi object twice
+c3052c6 pipe: iovec: Fix OOB read in pipe_read()
+1049b0f pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic
+b8ad6fb tty: Fix unsafe ldisc reference via ioctl(TIOCGETD)
+39c889e ft5x06: track in_call status from q6voice
+4db4826 ft5x06: add doubletap2wake
+68f9a2f mmc: core: Expose use_spi_crc module parameter in sysfs
+c8d530d msm: ipc_socket: fix leak of kernel memory to userspace
+496cbfd ARM: Xiaomi armani changes
+6132197 compilation fixes
+763a072 slimbus overclock
+5015be5 arm/kernel/irq.c: remove irq affinity warnings
+a7e0064 fs/dcache.c: Fix the too small buffer for dname
+ea71b1a msm: mdss: Use interruptible threads
+ff92480 fs: Tweak mount options for all partitions
+08790ba msm: memutils: 8084: memcpy, memmove optimization
+f548e35 msm: memutils: memcpy, memmove optimization
+03cfa60 msm: memutils: memcpy, memmove, copy_page optimization
+9157e7a arm: vfpmodule: Defer initialization
+f0a59a0 msm: camera_v2: Create jpeg debugfs
+97ddd7f msm: sps: Register SPS IRQ with IRQF_NO_SUSPEND flag
+795488a msm: mdss: if the event is interrupted 'continue' earlier
+9e63f62 msm: Use interruptible wait to not affect load average
+f2a1d42 msm: slimbus: use interruptible wait to reduce system's load average
+11534bb mdss: use an interruptible thread on edp to reduce load_average
+a128ad5 wakeup: try to deactivate a wakeup source when the user explicitly disables it from userspace
+7cdf5cb wakeup: add toggle for bluesleep wakelock
+f438f20 wakeup: add toggle for bluesleep wakelock
+9c1bfe0 wakeup: add toggle for bluedroid_timer wakelock
+cfc249d wakeup: add userspace knobs for users to filter some common excesive wakelocks
+9c2ce7e armani: defconfig: update and regenerate.
+fa8d237 BACKPORT: fs: Add TTY PM IOCTLs to compat table
+c88be2d sdcardfs: Remove stale dentries when reusing an inode.
+ec3d08b sdcardfs: Fix issue with d_child move
+7a68342 sdcardfs: Added top to sdcardfs_inode_info
+a2466b8 sdcardfs: Fix locking
+740f0d1 sdcardfs: Check for other cases on path lookup
+3a5ccf9 sdcardfs: override umask on mkdir and create
+444a7ddf ANDROID: sdcardfs: fix itnull.cocci warnings
+d00fdc2 sdcardfs: Truncate packages_gid.list on overflow
+fa6272d fuse: Add support for d_canonical_path
+bee5703 vfs: change d_canonical_path to take two paths
+41bd632 sdcardfs: remove unneeded __init and __exit
+092e95f sdcardfs: Remove unused code
+bdf9b55 inotify: Fix erroneous update of bit count
+9aee81d sdcardfs: Add support for d_canonicalize
+39b24fe vfs: add d_canonical_path for stacked filesystem support
+162716a sdcardfs: Bring up to date with Android M permissions:
+0025a40 sdcardfs: Changed type-cast in packagelist management
+1572453 sdcardfs: Port to 3.4
+faa610e get rid of kern_path_parent()
+0e35aa9 Included sdcardfs source code for kernel 3.0
+16646ef move d_rcu from overlapping d_child to overlapping d_alias
+24948ad debugfs: debugfs_remove_recursive() must not rely on list_empty(d_subdirs)
+95c6fb5 fixes for building with gcc 4.9
+83251ab BACKPORT: tcp: make challenge acks less predictable
+d91ad00 netfilter: x_tables: make sure e->next_offset covers remaining blob size
+bc64b4d netfilter: x_tables: fix unconditional helper
+3eaff19 ipv4: Don't do expensive useless work during inetdev destroy.
+034f605 net: ipv4: tcp: Get tcpi_count via file_count() not direct access
+02e35f0 net: add validation for the socket syscall protocol argument
+4dfd603 net: fix iterating over hashtable in tcp_nuke_addr()
+67ce7b6 net: add length argument to skb_copy_and_csum_datagram_iovec
+2ea47ab tcp_cubic: do not set epoch_start in the future
+9bf866e tcp_cubic: better follow cubic curve after idle period
+3e8fac9 udp: fix behavior of wrong checksums
+40c666a net: tcp: null pointer crash in __inet_put_port
+c2d457f ipv4: try to cache dst_entries which would cause a redirect
+c0ce4b0 tcp: undo spurious timeout after SACK reneging
+063a25e tcp: preserve ACK clocking in TSO
+cac6e45 inet: limit length of fragment queue hash table bucket lists
+67a2c86 tcp: fix skb_availroom()
+269a447 net/ipv4: Ensure that location of timestamp option is stored
+593a8f9 tcp: fix double-counted receiver RTT when leaving receiver fast path
+b594095 ipv6: use a stronger hash for tcp
+ae23633 tcp: fix for zero packets_in_flight was too broad
+2edba6d tcp: frto should not set snd_cwnd to 0
+5878acf net: prevent setting ttl=0 via IP_TTL
+5f07e6c tcp: RFC 5961 5.2 Blind Data Injection Attack Mitigation
+a76d73d tcp: tcp_replace_ts_recent() should not be called from tcp_validate_incoming()
+2faf466 tcp: refine SYN handling in tcp_validate_incoming
+4d8dbc6 tcp: implement RFC 5961 4.2
+cb4036b tcp: implement RFC 5961 3.2
+9a256e8 inet: Fix kmemleak in tcp_v4/6_syn_recv_sock and dccp_v4/6_request_recv_sock
+71332ed inet_diag: validate port comparison byte code to prevent unsafe reads
+7c53e97 inet_diag: avoid unsafe and nonsensical prefix matches in inet_diag_bc_run()
+70e8bdd inet_diag: validate byte code to prevent oops in inet_diag_bc_run()
+4c40310 inet_diag: fix oops for IPv4 AF_INET6 TCP SYN-RECV state
+46d60a1 ipv4: ip_check_defrag must not modify skb before unsharing
+1216d76 armani: defconfig: Set CONFIG_HZ to 300
+4ddce3f wlan: fix buffer overflow in linkspeed ioctl
+609a7a5 wlan: Remove the support for setwpaie ioctl
+8c14b7f Adds bound check on reg_cfg_cmd->u.dmi_info.hi_tbl_offset.
+c8273af ASoC: msm: qdsp6v2: check param length for EAC3 format
+e7546fa wcnss: Avoid user buffer overloading for write cal data
+67ee013 selinux: nlmsgtab: add SOCK_DESTROY to the netlink mapping tables
+c490cd1 UPSTREAM: selinux: fix bug in conditional rules handling
+4b992f3 selinux: Android kernel compatibility with M userspace
+e0fa787 selinux: extended permissions for ioctls
+31f0e2d selinux: remove unnecessary pointer reassignment
+a728b56 Revert "SELinux: per-command whitelisting of ioctls"
+4fa366f Revert "SELinux: use deletion-safe iterator to free list"
+ed80467 Revert "SELinux: ss: Fix policy write for ioctl operations"
+25a1d21 net: diag: Add the ability to destroy a socket.
+e5fa45a qpnp-bms: fix possible uninitialized variables
+afd0301 adreno: fix possible uninitialized variable
+1eb56d6 FROMLIST: arm: mm: support ARCH_MMAP_RND_BITS.
+ef1c192 FROMLIST: mm: mmap: Add new /proc tunable for mmap_base ASLR.
+9eb14b3 Revert "HACK: time: Disable alarmtimer"
+f5077a6 staging: android: Remove unused Kconfig option
+29b1c21 staging: android-alarm: Fix power off alarm
+8680751 staging: alarm-dev: information leak in alarm_ioctl()
+5e81f5d Revert "alarmtimer: set power off alarm to be triggered on time"
+5f598c9 alarm : Fix the race conditions in alarm-dev.c
+53a4eec power: qpnp-charger: Convert to alarmtimers
+73e8293 drivers: lpm-levels: Provide API to set wake up time from suspend
+c521862 msm: thermal: Remove alarm support in KTM
+2536b70 rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init
+7a62f47 qpnp-rtc: clear alarm register when rtc irq is disabled
+0423ca8 rtc: alarm: Add power-on alarm feature
+ccbf419 staging: alarm-dev: Refactor alarm-dev ioctl code in prep for compat_ioctl
+649f965 staging: alarm-dev: Drop pre Android 1.0 _OLD ioctls
+8d7a5c3 alarmtimer: set power off alarm to be triggered on time
+66c9148 staging: android-alarm: Switch from wakelocks to wakeup sources
+740b3e2 staging: Remove the Android logger driver
+d083757 rtc: Remove old alarm driver and switch to new implementation
+a020fad rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init
+8ddff76 rtc: alarm: Add power-on alarm feature
+116aa72 rtc: alarm: Change wake-up source
+25bc656 alarmtimer: add verification for rtc dev in power_on_alarm_init
+6340eb5 alarm: init power_on_alarm in alarm_dev_init
+43f7b09 rtc: alarm: Fix data handling issue with alarm->type
+852bbb4 alarmtimer: Lock k_itimer during timer callback
+f2695f6 alarmtimer: Do not signal SIGEV_NONE timers
+4b85e5a alarmtimer: Return relative times in timer_gettime
+903e297 rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init
+1e65a15 rtc: alarm: set power_on_alarm again when calling alarmtimer_resume
+66a8f20 alarmtimer: add rtc irq support for alarm
+846b228 alarmtimers: Squash upstream changes
+e1e63c7 alarmtimer: Fix bug where relative alarm timers were treated as absolute
+c8ef427 timerfd: support CLOCK_BOOTTIME clock
+bf96c5c timerfd: add alarm timers
+630d949 alarmtimer: add alarm_expires_remaining
+826f5d6 alarmtimer: add alarm_start_relative
+64bc82d alarmtimer: add alarm_forward_now
+1dc0c14 alarmtimer: add alarm_restart
+bd6ed50 alarmtimer: Use hrtimer per-alarm instead of per-base
+34658e7 alarmtimer: implement minimum alarm interval for allowing suspend
+993bd94 touchscreen: Fix gen_vkeys for several touchscreen driver
+f548072 msm: kgsl: Defer adding the mem entry to a process
+d8cfc34 net: ipc_router: Bind only a client port as control port
+6b9cd3b ashmem: Validate ashmem memory with fops pointer
+981d822 cpu: fix section mismatch warnings with __hotcpu_register
+ee4d57e profile: Fix CPU hotplug callback registration
+088cd3a drivers/base/topology.c: Fix CPU hotplug callback registration
+6b6bf3a arm, hw-breakpoint: Fix CPU hotplug callback registration
+9f7b2e04 CPU hotplug, perf: Fix CPU hotplug callback registration
+2c95009 net/core/flow.c: Fix CPU hotplug callback registration
+74b5b4e mm, vmstat: Fix CPU hotplug callback registration
+fbfe34c perf, cpu hotplug: Use cached value of smp_processor_id()
+27109ed perf, cpu hotplug: Run CPU_STARTING notifiers with irqs disabled
+9eed604 Doc/cpu-hotplug: Specify race-free way to register CPU hotplug callbacks
+e6e8bef trace, ring-buffer: Fix CPU hotplug callback registration
+ce2a75e CPU hotplug: Provide lockless versions of callback registration functions
+75bc855 sched_clock: Avoid corrupting hrtimer tree during suspend
+b6adc6a arm: arch_timer: Update for 64bit sched_clock
+05cb5d4 sched_clock: Add support for >32 bit sched_clock
+f72d2c1 sched_clock: Use an hrtimer instead of timer
+053ff68 sched_clock: Use seqcount instead of rolling our own
+964b541 clocksource: Extract max nsec calculation into separate function
+9ce10c3 ARM: sched_clock: Load cycle count after epoch stabilizes
+ef69afb sched_clock: Make ARM's sched_clock generic for all architectures
+418a87a msm: kgsl: Fix idle timer sysfs after removing references to HZ
+33764ec msm: kgsl: Fix direct references to HZ
+4249632 ARM: Allow selection HZ values
+1351a36 msm: kgsl: set the correct max_state
+fc0fae6 msm: kgsl: Bump the GPU frequency for long blocks of processing
+49aa097 mmc: move to a SCHED_FIFO thread
+e719bac cpuidle: Wakeup only cpus for which qos has changed.
+bb61a7d qos: Pass the list of cpus with affected qos to notifer
+053edde QoS: Enhance framework to support cpu/irq specific QoS requests
+9b923c4 PM / QoS: Fix workqueue deadlock when using pm_qos_update_request_timeout()
+f518656 PM: don't use [delayed_]work_pending()
+3edc5ff PM / sysfs: replace strict_str* with kstrto*
+05e4b1c PM / QoS: Introduce request and constraint data types for PM QoS flags
+8d374c8 PM / QoS: Add return code to pm_qos_get_value function.
+cdf1f2c md: use kzalloc() when bitmap is disabled
+880f8cc mm: let kswapd test movable zone watermark with ALLOC_CMA
+b472309 mm/compaction.c: fix warning of 'flags' may be used uninitialized
+367097e pagemap: do not leak physical addresses to non-privileged userspace
+b41a6c1 __ptrace_may_access() should not deny sub-threads
+9a526d2 mm: Fix NULL pointer dereference in madvise(MADV_WILLNEED) support
+c387556 msm: remote_spinlock: swp{b} is deprecated for ARM>v5
+323f285 mm: ksm: Optimize defaults
+2824229 mm, oom: base root bonus on current usage
+1ce4907 mm: vmpressure: scale pressure based on reclaim context
+8ad914a mm: Add notifier framework for showing memory
+3ef83a8 mm: vmpressure: allow in-kernel clients to subscribe for events
+ed07ae7 memcg: add memory.pressure_level events
+ea5c719 atomic: implement generic atomic_dec_if_positive()
+2dd1e6c lowmemorykiller: remove duplicate header include
+c6b2678 lowmemorykiller: avoid false adaptive LMK triggers
+a74996a lowmemorykiller: Don't count swap cache pages twice
+e758f01 lowmemorykiller: adapt to vmpressure
+bbabac6 lowmemorykiller: Do proper NULL checks
+cfabd3d lowmemorykiller: Run the lowmemory notifier when killing
+d0702c8 lowmemorykiller: Dump out slab state information
+b8de6e7 lowmemorykiller: use for_each_thread instead of buggy while_each_thread
+2371783 lowmemorykiller: enhance debug information
+24a1d64 lowmemorykiller: make default lowmemorykiller debug message useful
+de67c08 lowmemorykiller: Account for highmem during kswapd reclaim
+d8146be mm/compaction: fix wrong order check in compact_finished()
+7ae0e2e mm/compaction: make isolate_freepages start at pageblock boundary
+07012f7 mm: compaction: detect when scanners meet in isolate_freepages
+7a3b015 mm: compaction: reset cached scanner pfn's before reading them
+f390bda mm: use up free swap space before reaching OOM kill
+3833d1e mm: swap: fix swapcache usage for fast swap devices
+f336ba8 mm: swap: don't delay swap free for fast swap devices
+2d12ca6 armani: defconfig: Enable NEON
+e95e848 armani: defconfig: Use LZ4 and regen
+78a479e zram: switch to lz4 as default commpressor
+33073ec UPSTREAM: zsmalloc: fix a null pointer dereference in destroy_handle_cache()
+68d6dc8 UPSTREAM: zsmalloc: remove extra cond_resched() in __zs_compact
+05217fa UPSTREAM: zsmalloc: fix fatal corruption due to wrong size class selection
+a3eae02 UPSTREAM: zsmalloc: remove unnecessary insertion/removal of zspage in compaction
+98ee97a UPSTREAM: zsmalloc: micro-optimize zs_object_copy()
+0d18c96 UPSTREAM: zsmalloc: remove synchronize_rcu from zs_compact()
+b75ee30 UPSTREAM: mm/zsmalloc.c: fix comment for get_pages_per_zspage
+944c00b UPSTREAM: zsmalloc: zsmalloc documentation
+14b9e89 UPSTREAM: zsmalloc: add fullness into stat
+71deeff UPSTREAM: zsmalloc: record handle in page->private for huge object
+5e378de UPSTREAM: zsmalloc: adjust ZS_ALMOST_FULL
+4a10a38 UPSTREAM: zsmalloc: support compaction
+97041d5 UPSTREAM: zsmalloc: factor out obj_[malloc|free]
+c0a3ef1 UPSTREAM: zsmalloc: decouple handle and object
+525dffc BACKPORT: mm/zsmalloc: add statistics support
+6ced92a BACKPORT: mm/zpool: add name argument to create zpool
+da8c001 BACKPORT: mm/zsmalloc: adjust order of functions
+ca6c038 UPSTREAM: mm/zsmalloc: allocate exactly size of struct zs_pool
+4981d24 UPSTREAM: mm/zsmalloc: avoid duplicate assignment of prev_class
+75e1ec4 UPSTREAM: mm/zsmalloc: support allocating obj with size of ZS_MAX_ALLOC_SIZE
+5f99bd2 UPSTREAM: zsmalloc: correct fragile [kmap|kunmap]_atomic use
+b6ac614 UPSTREAM: zsmalloc: fix zs_init cpu notifier error handling
+110d19e UPSTREAM: zsmalloc: merge size_class to reduce fragmentation
+7e6b251 UPSTREAM: zsmalloc: simplify init_zspage free obj linking
+6e93af5 UPSTREAM: mm/zsmalloc.c: correct comment for fullness group computation
+d4a7132 UPSTREAM: zsmalloc: change return value unit of zs_get_total_size_bytes
+6eb856b UPSTREAM: zsmalloc: move pages_allocated to zs_pool
+38a09f9 BACKPORT: mm/zpool: use prefixed module loading
+b597e86 BACKPORT: mm/zpool: zbud/zsmalloc implement zpool
+cca400d BACKPORT: mm/zpool: implement common zpool api to zbud/zsmalloc
+09e9359 UPSTREAM: zsmalloc: fixup trivial zs size classes value in comments
+81dc6a4 BACKPORT: zsmalloc: add more comment
+3423a5b UPSTREAM: zsmalloc: add Kconfig for enabling page table method
+7067574 zsmalloc: Fix CPU hotplug callback registration
+8cff3cb zram/zcomp: do not zero out zcomp private pages
+d5e2a40 zram: pass gfp from zcomp frontend to backend
+55b4365 zram: try vmalloc() after kmalloc()
+8453225 zram/zcomp: use GFP_NOIO to allocate streams
+377967f zram: fix error return code
+6932187 zram: optimize memory operations with clear_page()/copy_page()
+cc6257a zram: allow request end to coincide with disksize
+b82ffeb zram: support REQ_DISCARD
+1884e77 zram: use scnprintf() in attrs show() methods
+8c61134 zram: propagate error to user
+c5ba517 zram: return error-valued pointer from zcomp_create()
+540ea79 zram: move comp allocation out of init_lock
+6e0facf zram: add lz4 algorithm backend
+3e913b8 zram: make compression algorithm selection possible
+5dd97ff zram: add set_max_streams knob
+e9a476c zram: add multi stream functionality
+6c85071 zram: factor out single stream compression
+fec2628 zram: use zcomp compressing backends
+6d7298f zram: introduce compressing backend abstraction
+ac4c63e zram: delete zram_init_device()
+480ab0d zram: move zram size warning to documentation
+956fe5d zram: drop not used table `count' member
+de3e28b zram: report failed read and write stats
+f6b7667 zram: remove zram stats code duplication
+1386959 zram: use atomic64_t for all zram stats
+1acffbb zram: remove good and bad compress stats
+5babbe0 zram: do not pass rw argument to __zram_make_request()
+7df339b zram: drop `init_done' struct zram member
+9cfffa5 zram: avoid null access when fail to alloc meta
+69ff900 zram: remove zram->lock in read path and change it with mutex
+3ea665e zram: remove workqueue for freeing removed pending slot
+390d961 zram: introduce zram->tb_lock
+048ee2e zram: prevent data loss in error cases of function zram_bvec_write()
+5f0e7f2 zram: use atomic operation for stat
+5c4952a zram: fix race between reset and flushing pending work
+3220067 zsmalloc: add copyright
+1b5492e zram: promote zram from staging
+57b156e Revert "zram: Add LZ4 support"
+34056ea Staging: zram: Fix memory leak by refcount mismatch
+2e090fe zsmalloc: move it under mm
+
+   * packages/apps/AicpExtras/
+1087d3b Merge "AE: fixed typos in de-translations..." into n7.1
+6d5faf3 AE: fixed typos in de-translations...
+
+   * packages/apps/CMParts/
+7fd31d9 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+1642cce Enable support for groups in External contacts accounts
+
+   * packages/apps/Settings/
+f66198d Merge "Settings: display: Add wake on plug switch" into n7.1
+7e000e1 Automatic translation import
+617fb22 Settings: Set summary for zen priority notif preference
+3e8710d Automatic translation import
+f7264b4 Settings: display: Add wake on plug switch
+
+   * packages/apps/Snap/
+6d717ac Remove log spam
+
+   * packages/services/Telephony/
+d07ef83 Automatic translation import
+
+   * vendor/aicp/
+13bccfd Add Reliance Jio India IMS volte apn's
+2095e57 Fix Reliance Jio India APNs.
+145fd65 Revert "vendor_aicp: Disable seed nightly for Aicp 7.1"
+a018e65 vendor_aicp: Disable seed nightly for Aicp 7.1
+
+   * vendor/cmsdk/
+18fbc31 Automatic translation import
+
+   * vendor/qcom/binaries/
+6725f8b msm8996: audio: Updated sound trigger HAL
+738a8d0 msm8996: graphics: Update graphics blobs
+
+====================
+     12-11-2016
+====================
+
+
+   * build/
+926baee repopick: Avoid failing on commits lookup
+
+   * device/qcom/sepolicy/
+5e44226 Escape '.' character
+
+   * frameworks/base/
+b6adf0a Merge "base: dynamic navbar colors" into n7.1
+f722262 Automatic translation import
+b11e2e6 Automatic translation import
+
+   * packages/apps/AicpExtras/
+3dc06dd Merge "AE: Updated de-translations, added licence..." into n7.1
+231bc86 AE: Updated de-translations, added licence...
+
+   * packages/apps/AudioFX/
+7f84f53 Automatic translation import
+
+   * packages/apps/Bluetooth/
+9d5a01b Automatic translation import
+
+   * packages/apps/CMFileManager/
+8909801 Automatic translation import
+
+   * packages/apps/CMParts/
+a8810a7 Automatic translation import
+0808cc9 Merge changes I536bde6f,I46a68799 into n7.1
+da8f573 CMParts: initial de-translations for AICP settings (Date)...
+
+   * packages/apps/Calendar/
+e415032 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+efeed63 Automatic translation import
+
+   * packages/apps/Dialer/
+8313ed0 Automatic translation import
+
+   * packages/apps/Gello/
+91350ce Automatic translation import
+
+   * packages/apps/Messaging/
+4e89cad Automatic translation import
+
+   * packages/apps/PhoneCommon/
+8eeb509 Themes: Make dialpad seperator line theme-able
+3486658 Automatic translation import
+82de42c Automatic translation import
+
+   * packages/apps/Settings/
+6a28d0f Settings: Fix theming of switchbar background color
+4fbb240 Settings: Fix condition card OMS mismerge
+10e9d4b Settings: Expose LinearColorBar default colors
+cd6a6e7 Settings: Expose storage icon colors
+7ba7136 Merge "Automatic translation import" into n7.1
+4747f1f Merge "Settings: Updated de-translations / cleanup" into n7.1
+456e0ee Settings: Updated de-translations / cleanup
+
+   * packages/apps/SetupWizard/
+4ec9f97 Automatic translation import
+
+   * packages/apps/Snap/
+8ac1f65 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+85d86c7 Automatic translation import
+
+   * packages/apps/Trebuchet/
+f58093a Automatic translation import
+
+   * packages/providers/DownloadProvider/
+f1d6599 Automatic translation import
+
+   * packages/services/Telephony/
+21b076d Automatic translation import
+
+   * vendor/aicp/
+9486609 add LG G2 L-01F (l01f)
+754ecb2 cm: bring back storage manager
+0da517d Add permissions & sepolicy for HBM
+4a6632b bullhead: update build fingerprint and description to NMF26F
+
+   * vendor/cmsdk/
+636867f Automatic translation import
+f6e4623 FileUtils: Add util to check if a file exists
+
+====================
+     12-10-2016
+====================
+
+
+   * build/
+a3bfabf build: envsetup: Add mmmap command
+e30cdc4 core: allow specifying building ramdisk(s) with lzma
+
+   * external/vim/
+63de19e patch 8.0.0130 Problem:    Configure uses "ushort" while the Vim code doesn't. Solution:   Use "unsigned short" instead. (Fredrik Fornwall, closes #1314)
+0df3c7f patch 8.0.0129 Problem:    Parallel make still doesn't work. (Lewis Muir) Solution:   Define OBJ_MAIN.
+7089237 patch 8.0.0128 Problem:    Display test fails on MS-Windows. Solution:   Set 'isprint' to "@".
+73fd498 patch 8.0.0127 Problem:    Cancelling completion still inserts text when formatting is done             for 'textwidth'. (lacygoill) Solution:   Don't format when CTRL-E was typed. (Hirohito Higashi,             closes #1312)
+6270660 patch 8.0.0126 Problem:    Display problem with 'foldcolumn' and a wide character.             (esiegerman) Solution:   Don't use "extra" but an allocated buffer. (Christian Brabandt,             closes #1310)
+eaaa9bb patch 8.0.0125 Problem:    Not enough testing for entering Ex commands. Solution:   Add test for CTRL-\ e {expr}. (Dominique Pelle)
+
+   * frameworks/base/
+dd023ba core: cm_symbols: Remove deprecated <private-symbols>
+
+   * hardware/qcom/audio-caf/msm8916/
+3941619 policy_hal: Fix mismerges
+
+   * hardware/qcom/audio-caf/msm8937/
+1b182cc policy_hal: Fix mismerges
+
+   * hardware/qcom/audio-caf/msm8952/
+f3d5f7f policy_hal: Fix mismerges
+
+   * hardware/qcom/audio-caf/msm8960/
+9c27ca1 policy_hal: Fix mismerges
+
+   * hardware/qcom/audio-caf/msm8974/
+592a45c policy_hal: Fix mismerges
+
+   * hardware/qcom/audio-caf/msm8994/
+00734dd policy_hal: Fix mismerges
+
+   * hardware/qcom/audio-caf/msm8996/
+2d302a2 policy_hal: Fix mismerges
+
+   * hardware/samsung/
+1bf7769 macloader : add n5110 murata MAC address
+
+   * packages/apps/CMParts/
+8a725e2 CMParts: Improve button settings strings
+4327ba4 Automatic translation import
+
+   * packages/apps/Settings/
+426189e Automatic translation import
+
+   * packages/services/Telephony/
+f236820 CallFeatureSettings: Only show video quality if QTI package installed
+
+   * vendor/aicp/
+2a4b8e2 m8: fix product.mk
+d1e8543 Merge "cm: overlay: Enable auto-power-save modes globally" into n7.1
+
+   * vendor/cmsdk/
+1c5e5e7 cmsdk: Add GlobalSettingSwitchPreference class
+41eab0f cmsdk: Use ConnectivityManager to manage tethering
+
+====================
+     12-09-2016
+====================
+
+
+   * device/qcom/sepolicy/
+b29913e Add common rules for random MAC generation
+
+   * device/xiaomi/armani/
+ff6b38a armani: power: add "above_hispeed_delay" interactive governor parameter
+7d34aba armani: power: update power profiles with latest changes.
+ae91d49 armani: doze: Protect com.android.systemui.doze.pulse
+7a10dd9 armani: doze: Commonize Doze strings
+
+   * frameworks/base/
+2589995 SystemUI: One edit is more than enough
+0ad9af1 base: dynamic navbar colors
+84ecd43 services: Doze only if GMS is installed
+
+   * frameworks/opt/telephony/
+ce22026 Fixes and cleanups after 7.1.0/7.1.1 merge
+
+   * hardware/qcom/fm/
+1817ac7 Automatic translation import
+
+   * hardware/samsung/
+4139d85 power: Allow devices to override node paths
+f3c6a42 liblights: Scale brightness if necessary
+
+   * packages/apps/AicpExtras/
+5356695 AE: Add license and set correct <resources> tag for translation
+
+   * packages/apps/AudioFX/
+dcc210f Automatic translation import
+
+   * packages/apps/Browser/
+fd2c716 Automatic translation import
+
+   * packages/apps/CMBugReport/
+a717d2e Automatic translation import
+
+   * packages/apps/CMFileManager/
+3deb005 Automatic translation import
+
+   * packages/apps/CMUpdater/
+03f2dad Automatic translation import
+
+   * packages/apps/CMWallpapers/
+ace268b Automatic translation import
+
+   * packages/apps/Eleven/
+3f80f3e Automatic translation import
+
+   * packages/apps/Exchange/
+365f615 Automatic translation import
+
+   * packages/apps/FMRadio/
+92264a2 Automatic translation import
+
+   * packages/apps/Gello/
+6bd0497 Automatic translation import
+
+   * packages/apps/LockClock/
+2edc867 Automatic translation import
+
+   * packages/apps/Profiles/
+5202710 Automatic translation import
+
+   * packages/apps/Screencast/
+6321459 Automatic translation import
+
+   * packages/apps/Settings/
+cadf8d9 Settings: Remove our storage changes
+
+   * packages/apps/SetupWizard/
+dad3870 Automatic translation import
+
+   * packages/apps/Snap/
+7c09c91 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+9a6dd64 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+10c9150 Automatic translation import
+
+   * packages/apps/Trebuchet/
+64eb69b Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+b640097 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+7b649c5 Automatic translation import
+
+   * packages/providers/WeatherProvider/
+f284021 Automatic translation import
+
+   * packages/services/CMAudioService/
+0b0ec25 Automatic translation import
+
+   * packages/services/LiveLockScreenService/
+c33b19f Automatic translation import
+
+   * packages/services/ThemeManagerService/
+a37f4b5 Automatic translation import
+
+   * packages/services/WeatherService/
+e3d8bc3 Automatic translation import
+
+   * vendor/aicp/
+20cd178 vendor_aicp: m7 & m8 cleanup
+df83525 cm: overlay: Enable auto-power-save modes globally
+906b1a1 cm: Fix Trusted Face
+
+   * vendor/cmsdk/
+bb4cbde Automatic translation import
+8534274 cmsdk: utils: Introduce PackageManagerUtils class
+
+====================
+     12-08-2016
+====================
+
+
+   * build/
+4791655 OMS7-N: adb shell command to access OverlayManagerService
+
+   * device/xiaomi/armani/
+47876db armani: sepolicy: Cleanup bluetooth_loader
+
+   * frameworks/base/
+a32978b GlobalActions silent mode selection indicator: back to teal variant
+82c2594 Automatic translation import
+f92946e Fix build after OMS
+3f84816 OMS7-N: ApplicationsState: add filter for Substratum icon overlays [1/2]
+6f38a01 Themes: Expose various QuickSettings text colors
+d458061 Allow custom alpha for notification shade bg color
+e5bb3e5 Ambient notification inversion compatible with OMS7 (2/2)
+0daebc2 Notification dynamic colors bool compatible with OMS7 (2/2)
+ec96496 Revert "base: New google pixel colors"
+fc38267 Revert "sysui: New google pixel colors"
+cf9d402 Themes: Expose nav bar tuner colors
+6a94a1b Allow prevention of doze notification color inversion
+197e0af Notifications: Expose a bool to disable dynamic colors
+1b9fa3b SystemUI: Expose QS edit item decoration background color
+9afb20e Themes: Allow Resolver List BG to be fully themed
+d11c4c4 Themes: Make resolver list fully themeable
+8e3299f Themes: Allow Navbar ripple color to be themed
+991137e Themes: Allow Permission Icons to be fully themed
+50bd4d4 Themes: Allow Immersive cling colors to be fully themed
+cda6d8d Themes: Expose resolver hardcoded colors
+dc8e1ba N-Extras: Add dynamic theme fonts support
+9098cff N-Extras: AudioService: Allow system effect sounds to be themed
+8c4bc3c N-Extras: Add dynamic theme BootAnimation support
+6518fd2 OMS7-N: ApplicationsState: add filter for Substratum overlays [1/2]
+aa7b54b Resource Runtime Overlay: Repair damages to Zygote runtime overlays
+c6f1905 OMS7-N: Implement multi-target enable/disable and disable-all [11/11]
+298ba27 OMS7-N: Do not enforce code policy limiting overlay installation [10/11]
+4d66a30 OMS7-N: Persistence on boot through OverlayManagerServiceImpl [9/11]
+bd5ede5 OMS7-N: Disable Zygote preloaded drawables [8/11]
+f6d5662 OMS7-N: installd: add command 'rmidmap' [7/11]
+52930a0 OMS7-N: Fix memory leak during idmap creation [6/11]
+618bf3f OMS7-N: idmap: suppress print for padded resources [5/11]
+1549fc7 OMS7-N: Set EXTRA_REPLACING correctly in ACTION_PACKAGE_ADDED [4/11]
+fd0e2bc OMS7-N: Integrate OverlayManagerService into framework [3/11]
+fbac078 OMS7-N: Introduce the OverlayManagerService [2/11]
+19c8db6 OMS7-N: Support tagging resources as OK to overlay [1/11]
+c1a0d66 base:add missing import
+694ec49 base: fix build after 7.1.1 merge
+8ec1349 fwb: services: tests: Remove duplicated WrappedAvoidBadWifiTracker class
+2f375db Merge tag 'android-7.1.1_r4'
+
+   * frameworks/native/
+a3dd851 OMS7-N: installd: add command 'rmidmap'
+
+   * packages/apps/Bluetooth/
+2c95f81 Automatic translation import
+c7a4661 Automatic translation import
+3a4891b Automatic translation import
+
+   * packages/apps/Calendar/
+c1a3e17 Automatic translation import
+fc1da0c Automatic translation import
+b770a4c Automatic translation import
+
+   * packages/apps/Contacts/
+eda62fc Themes: Expose hardcoded layout and styles colors
+
+   * packages/apps/ContactsCommon/
+9e5cbee Themes: Expose hardcoded contact tile text colors
+
+   * packages/apps/Dialer/
+aca67ce Automatic translation import
+f0e45a5 Automatic translation import
+
+   * packages/apps/EmergencyInfo/
+04b1bb6 Automatic translation import
+
+   * packages/apps/Messaging/
+48b2720 Automatic translation import
+0d96bae Automatic translation import
+5d6eb34 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+80cfac4 Automatic translation import
+77b6123 Automatic translation import
+
+   * packages/apps/Settings/
+51627b4 Automatic translation import
+b3fc10d Settings: Fix the failing of more strings
+92ada0f Settings: Fix the failing strings
+410da98 Fix asturian again
+75f9b16 Automatic translation import
+b24bab4 Automatic translation import
+e0cb042 Merge "AE custom summary: use random line when setting value contains multiple lines" into n7.1
+325e1e7 settings: remove projekt xml
+00b99fd OMS7-N: Apps: show/hide Substratum icon overlays [2/2]
+773ce17 Add back a helper pref that holds a system setting.
+32a2e19 Revert "settings: New google pixel colors"
+482f292 OMS7-N: Apps: show/hide Substratum overlays [2/2]
+63727b4 Expose dashboard category and tile color
+6cf99da Themes: Expose condition card colors
+2e4c514 Settings: Expose storage summary text
+e4d6f2a Unbreak Fingerprint Unlock Setup
+e2bba9c Merge tag 'android-7.1.1_r4'
+
+   * packages/apps/TvSettings/
+83d15e2 Automatic translation import
+
+   * packages/apps/WallpaperPicker/
+f507d00 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+a0a2d78 Automatic translation import
+18a7458 Automatic translation import
+
+   * packages/services/Telephony/
+313b610 Merge "Automatic translation import" into n7.1
+0e5951a Automatic translation import
+efca57a Automatic translation import
+
+   * platform_manifest/
+db99ad9 manifest: Track locally Contacts, ContactsCommon and PhoneCommon
+e82c0f6 Merge "manifest: add teamsubratum and masquerade" into n7.1
+beee94c Merge "manifest: Track fw_native locally" into n7.1
+7928a0d manifest: add teamsubratum and masquerade
+
+   * system/sepolicy/
+f70e827 OMS7-N: Add service 'overlay' to service_contexts
+
+   * vendor/aicp/
+c99e1c4 Merge "Change the startup and make it "cooler"..." into n7.1
+9175eca sepolicy: Escape '.' character
+b6aef34 sepolicy: Fix "Allow adb pull of executables without root"
+ca66448 Merge "Add ro.substratum.verified=true to build.prop" into n7.1
+9b83bfe Merge "vendor: add masquerade" into n7.1
+007ec41 Add ro.substratum.verified=true to build.prop
+a02efe2 vendor: add masquerade
+1a1ebc8 shamu: Update build fingerprint & description to NBD91U
+
+====================
+     12-07-2016
+====================
+
+
+   * art/
+58d4793 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * build/
+59f3ddc blockimgdiff: plz don't spam my terminal, thx
+98ba555 build: merge tag 'android-7.1.1_r4' into n7.1
+
+   * device/qcom/sepolicy/
+fff623b Allow hci_qcomm_init /persist/.bt_nv.bin access
+8772a25 Allow qmuxd access diag
+db0673b Readd support for old perfd socket
+ce8a4df Move bluetooth_loader sepolicy to common
+
+   * frameworks/av/
+8df0436 Merge branch 'cm-14.1' of https://github.com/CyanogenMod/android_frameworks_av into n7.1
+08b2db1 Merge tag 'android-7.1.1_r4' into try_again
+58fa2d3 Revert "stagefright: add handling for Large metadata across binder"
+
+   * frameworks/base/
+bacd6f9 Merge "ColorFade: fix EGL crash on exynos4 mali blobs" into n7.1
+89332e9 Fix the deadlock problem
+4102c55 [AM] Fix system server may killed when monkey crash.
+
+   * frameworks/opt/telephony/
+07fb1fe Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * hardware/qcom/audio-caf/msm8916/
+92eff45 audio policy: fix capture indication to sound trigger service.
+a002cb7 audio policy: fix media volume after ringtone
+bf8c245 audiopolicy: Avoid spurious routing in APM::stopSource
+02f55ae audio_policy: Add extra check before restoring device in stopOutput
+
+   * hardware/qcom/audio-caf/msm8937/
+81237ea audio policy: fix capture indication to sound trigger service.
+61c12d5 audio policy: fix media volume after ringtone
+bfdbcf2 audiopolicy: Avoid spurious routing in APM::stopSource
+
+   * hardware/qcom/audio-caf/msm8952/
+b4d2df1 audio policy: fix capture indication to sound trigger service.
+7d376f3 audio policy: fix media volume after ringtone
+534f1fd audiopolicy: Avoid spurious routing in APM::stopSource
+
+   * hardware/qcom/audio-caf/msm8960/
+5dc5270 audio policy: fix media volume after ringtone
+
+   * hardware/qcom/audio-caf/msm8974/
+b5f28ec audio policy: fix media volume after ringtone
+
+   * hardware/qcom/audio-caf/msm8994/
+5059cb1 audio policy: fix capture indication to sound trigger service.
+c4bc329 audio policy: fix media volume after ringtone
+
+   * hardware/qcom/audio-caf/msm8996/
+07650c8 audio policy: fix capture indication to sound trigger service.
+9449876 audio policy: fix media volume after ringtone
+
+   * packages/apps/Bluetooth/
+18e387a Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/CMParts/
+35fe517 CMParts: Move resource utility methods into a util class
+
+   * packages/apps/CellBroadcastReceiver/
+ba2807f Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/Settings/
+70687e0 Merge "Settings: Add CMHW vibrator intensity preference" into n7.1
+
+   * packages/services/Telephony/
+2a72710 Merge tag 'android-7.1.1_r4' into n7.1
+
+   * platform_manifest/
+b3c5464 manifest: Use aosp fork of wallpaper picker
+ef9664b Merge tag 'android-7.1.1_r4'
+
+   * system/core/
+abbba9f Merge branch 'cm-14.1' of https://github.com/CyanogenMod/android_system_core into n7.1
+
+   * system/sepolicy/
+7a45e48 Merge tag 'android-7.1.1_r4' into n7.1
+
+   * vendor/aicp/
+0d2da6b Reorganise a bit
+
+====================
+     12-06-2016
+====================
+
+
+   * art/
+20af132 dex2oat: Fix compilation of host binary on Mac due to watchdog fix
+
+   * bionic/
+cc5d7ad Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * bootable/recovery/
+93bcfca Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * development/
+ed637d9 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * external/boringssl/
+20e10d3 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * external/icu/
+96679c6 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * external/iproute2/
+3e14eaf Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * external/libhevc/
+be401a3 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * external/libxml2/
+9074669 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * external/okhttp/
+b36a712 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * external/skia/
+1be5c83 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * external/toybox/
+9f27615 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * frameworks/base/
+01c97f9 KeyguardStatusBarView: update to use BatteryMeterDrawables
+74cfdca ColorFade: fix EGL crash on exynos4 mali blobs
+3ca103d AppOps: Do not prune apps that are not present
+39b6ce2 Support for MODE_ASK in commandline
+
+   * frameworks/native/
+1c3a042 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * frameworks/opt/datetimepicker/
+66a7685 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * frameworks/opt/net/ims/
+06434bb Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * frameworks/opt/net/wifi/
+7e4f2af Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * frameworks/opt/setupwizard/
+66dcb82 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * frameworks/opt/telephony/
+ff5ecfb fix compile error.
+
+   * frameworks/opt/vcard/
+90940cd Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * frameworks/support/
+0422d94 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * hardware/broadcom/wlan/
+ec1bdf2 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * hardware/cyanogen/
+bab4499 cmhw: Add support for HBM
+
+   * hardware/libhardware/
+f1aeb1f Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * hardware/qcom/audio-caf/msm8974/
+7010e5b audiopolicy: Avoid spurious routing in APM::stopSource
+
+   * hardware/qcom/audio-caf/msm8994/
+3aa03bf audiopolicy: Avoid spurious routing in APM::stopSource
+
+   * hardware/qcom/audio/default/
+6e93570 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * hardware/qcom/bt/
+9fda5c3 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * hardware/qcom/camera/
+4688bb5 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * hardware/qcom/display/
+d7dc8cd Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * hardware/qcom/gps/
+371e95f Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * hardware/qcom/media/
+2fb47ed Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * hardware/ril/
+4715c65 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * libcore/
+d34cbe9 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/Camera2/
+ba1fd32 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/CarrierConfig/
+2f5013f Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/CertInstaller/
+14ae18b Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/Dialer/
+ed8361f Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/EmergencyInfo/
+71b6494 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/ExactCalculator/
+140eeb2 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/ManagedProvisioning/
+94a5f31 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/Messaging/
+09edb9f Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/Nfc/
+213bb13 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/PackageInstaller/
+e1bff64 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/PhoneCommon/
+8d53892 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/Settings/
+e6d9765 Use bands.length instead of bands[0] when populating the bands list
+
+   * packages/apps/Stk/
+91e60c1 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/StorageManager/
+c2e731d Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/apps/TvSettings/
+3297a0b Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/inputmethods/LatinIME/
+dded75c Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/providers/ContactsProvider/
+972e214 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/providers/DownloadProvider/
+6867fd9 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/providers/MediaProvider/
+ea4068b Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/providers/TelephonyProvider/
+488ef95 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/services/Car/
+1692bfa Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/services/Mms/
+29e321b Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/services/Telecomm/
+2c0bda4 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * packages/wallpapers/LivePicker/
+47b60d5 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * system/bt/
+6fe776c Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * system/core/
+1ac6d97 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * system/keymaster/
+27afd44 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * system/media/
+c5b5812 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * system/netd/
+5615983 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * system/vold/
+87e0068 Merge tag 'android-7.1.1_r4' into cm-14.1
+
+   * vendor/aicp/
+860dd5b Merge "angler: update fingerprint to NMF26F (7.1.1)" into n7.1
+c2fc8f5 flounder: update fingerprint to NMF26F
+e2b104a angler: update fingerprint to NMF26F (7.1.1)
+
